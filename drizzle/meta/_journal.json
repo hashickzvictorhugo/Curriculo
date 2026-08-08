@@ -8,6 +8,13 @@
       "when": 1786163420577,
       "tag": "0000_curvy_catseye",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "6",
+      "when": 1786170876168,
+      "tag": "0001_glorious_magus",
+      "breakpoints": true
     }
   ]
 }

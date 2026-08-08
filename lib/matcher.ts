@@ -1,6 +1,8 @@
 import {
   getCompanyPriorities,
   getCompanySector,
+  type CompanyPriority,
+  type CompanySector,
 } from "./company-catalog";
 import {
   GENERIC_PROFILE,
@@ -10,6 +12,10 @@ import {
   type RoleProfile,
   type SkillRequirement,
 } from "./role-catalog";
+import {
+  DEFAULT_SCORING_WEIGHTS,
+  type ScoringWeights,
+} from "./site-config";
 
 export { ROLE_PROFILES } from "./role-catalog";
 export type { RoleProfile, SkillRequirement } from "./role-catalog";
@@ -70,27 +76,39 @@ export function analyzeCompatibility(input: {
   resumeText: string;
   roleId: string;
   roleTitle?: string;
+  roleProfileId?: string;
+  roleSkillKeywords?: string[];
   company: string;
   companySectorId?: string;
   companyPriorityIds?: string[];
+  companySector?: CompanySector | null;
+  companyPriorities?: CompanyPriority[];
   companyDescription?: string;
   jobDescription?: string;
+  weights?: ScoringWeights;
 }): MatchResult {
   const resume = normalizeText(input.resumeText);
   const description = normalizeText(input.jobDescription ?? "");
   const occupation = findOccupation(input.roleId) ?? findOccupation(input.roleTitle ?? "");
-  const directProfile = getProfileById(input.roleId);
-  const baseProfile = occupation
+  const directProfile = getProfileById(input.roleProfileId ?? "") ?? getProfileById(input.roleId);
+  const baseProfile = directProfile ?? (occupation
     ? getProfileById(occupation.profileId) ?? GENERIC_PROFILE
-    : directProfile ?? GENERIC_PROFILE;
+    : GENERIC_PROFILE);
   const roleTitle = input.roleTitle?.trim() || occupation?.title || baseProfile.title;
-  const isCustomRole = baseProfile.id === GENERIC_PROFILE.id && !occupation;
-  const dynamicSkills = isCustomRole ? buildDynamicSkills(description) : [];
+  const isCustomRole = baseProfile.id === GENERIC_PROFILE.id && !occupation && !input.roleProfileId;
+  const configuredSkills = (input.roleSkillKeywords ?? [])
+    .map((keyword) => keyword.trim())
+    .filter(Boolean)
+    .slice(0, 16)
+    .map((keyword) => ({ label: displayKeyword(keyword), aliases: [keyword] }));
+  const dynamicSkills = configuredSkills.length
+    ? configuredSkills
+    : isCustomRole ? buildDynamicSkills(description) : [];
   const profile: RoleProfile = {
     ...baseProfile,
     title: roleTitle,
     minYears: extractRequiredYears(description) || baseProfile.minYears,
-    skills: dynamicSkills.length >= 4 ? dynamicSkills : baseProfile.skills,
+    skills: dynamicSkills.length ? dynamicSkills : baseProfile.skills,
   };
 
   const matchedSkills = profile.skills.filter((item) => matchesRequirement(resume, item));
@@ -125,18 +143,21 @@ export function analyzeCompatibility(input: {
     : hasDegree ? 100 : hasTechnicalEducation ? 82 : 62;
   const companyMatch = analyzeCompanyContext({
     resume,
-    sectorId: input.companySectorId ?? "",
-    priorityIds: input.companyPriorityIds ?? [],
+    sector: input.companySector === undefined
+      ? getCompanySector(input.companySectorId ?? "")
+      : input.companySector,
+    priorities: input.companyPriorities ?? getCompanyPriorities(input.companyPriorityIds ?? []),
     companyDescription: input.companyDescription ?? "",
   });
+  const weights = input.weights ?? DEFAULT_SCORING_WEIGHTS;
 
   const weightedDimensions: WeightedDimension[] = [
     {
       id: "skills",
       label: "Competências técnicas",
       score: skillsScore,
-      baseWeight: 36,
-      detail: isCustomRole && dynamicSkills.length >= 4
+      baseWeight: weights.skills,
+      detail: (isCustomRole || configuredSkills.length > 0) && dynamicSkills.length > 0
         ? `${matchedSkills.length} de ${profile.skills.length} requisitos extraídos do anúncio encontrados`
         : `${matchedSkills.length} de ${profile.skills.length} competências essenciais encontradas`,
     },
@@ -144,7 +165,7 @@ export function analyzeCompatibility(input: {
       id: "experience",
       label: "Experiência",
       score: experienceScore,
-      baseWeight: 20,
+      baseWeight: weights.experience,
       detail: years
         ? `${years} ano${years === 1 ? "" : "s"} de experiência sinalizado${years === 1 ? "" : "s"}`
         : "Tempo de experiência não identificado com clareza",
@@ -156,7 +177,7 @@ export function analyzeCompatibility(input: {
       id: "context",
       label: "Aderência à vaga",
       score: vacancyScore,
-      baseWeight: 20,
+      baseWeight: weights.vacancy,
       detail: `${matchedKeywords.length} de ${customKeywords.length} termos específicos do anúncio encontrados`,
     });
   }
@@ -166,7 +187,7 @@ export function analyzeCompatibility(input: {
       id: "company",
       label: "Contexto da empresa",
       score: companyMatch.score,
-      baseWeight: 12,
+      baseWeight: weights.company,
       detail: companyMatch.detail,
     });
   }
@@ -176,14 +197,14 @@ export function analyzeCompatibility(input: {
       id: "softSkills",
       label: "Competências comportamentais",
       score: softScore,
-      baseWeight: 7,
+      baseWeight: weights.softSkills,
       detail: `${matchedSoft.length} de ${profile.softSkills.length} sinais comportamentais encontrados`,
     },
     {
       id: "education",
       label: "Formação",
       score: educationScore,
-      baseWeight: 5,
+      baseWeight: weights.education,
       detail: hasDegree
         ? "Formação superior identificada"
         : hasTechnicalEducation
@@ -194,8 +215,16 @@ export function analyzeCompatibility(input: {
     },
   );
 
-  const totalWeight = weightedDimensions.reduce((total, dimension) => total + dimension.baseWeight, 0);
-  let score = Math.round(weightedDimensions.reduce(
+  let scoringDimensions = weightedDimensions;
+  let totalWeight = scoringDimensions.reduce((total, dimension) => total + dimension.baseWeight, 0);
+  if (totalWeight <= 0) {
+    scoringDimensions = weightedDimensions.map((dimension) => ({
+      ...dimension,
+      baseWeight: defaultWeightForDimension(dimension.id),
+    }));
+    totalWeight = scoringDimensions.reduce((total, dimension) => total + dimension.baseWeight, 0);
+  }
+  let score = Math.round(scoringDimensions.reduce(
     (total, dimension) => total + dimension.score * dimension.baseWeight,
     0,
   ) / totalWeight);
@@ -203,7 +232,7 @@ export function analyzeCompatibility(input: {
   if (hasMetrics) score += 3;
   score = clamp(score, 18, 97);
 
-  const dimensions: MatchDimension[] = weightedDimensions.map(({ baseWeight, ...dimension }) => ({
+  const dimensions: MatchDimension[] = scoringDimensions.map(({ baseWeight, ...dimension }) => ({
     ...dimension,
     weight: Math.round((baseWeight / totalWeight) * 100),
   }));
@@ -258,12 +287,12 @@ export function analyzeCompatibility(input: {
 
 function analyzeCompanyContext(input: {
   resume: string;
-  sectorId: string;
-  priorityIds: string[];
+  sector: CompanySector | null;
+  priorities: CompanyPriority[];
   companyDescription: string;
 }): CompanyMatch | null {
-  const sector = getCompanySector(input.sectorId);
-  const priorities = getCompanyPriorities(input.priorityIds);
+  const sector = input.sector;
+  const priorities = input.priorities;
   const companyText = normalizeText(input.companyDescription);
   const companyKeywords = extractKeywords(companyText, 10);
   const components: Array<{ score: number; weight: number }> = [];
@@ -470,6 +499,11 @@ function uniqueRequirements(values: SkillRequirement[]): SkillRequirement[] {
 
 function percentage(found: number, total: number): number {
   return total ? clamp(Math.round((found / total) * 100), 0, 100) : 0;
+}
+
+function defaultWeightForDimension(id: MatchDimension["id"]): number {
+  if (id === "context") return DEFAULT_SCORING_WEIGHTS.vacancy;
+  return DEFAULT_SCORING_WEIGHTS[id];
 }
 
 function clamp(value: number, min: number, max: number): number {

@@ -21,3 +21,13 @@ export const analyses = sqliteTable(
   ],
 );
 
+export const siteSettingsVersions = sqliteTable(
+  "site_settings_versions",
+  {
+    revision: integer("revision").primaryKey(),
+    configJson: text("config_json").notNull(),
+    updatedByUserId: text("updated_by_user_id").notNull(),
+    updatedByEmail: text("updated_by_email").notNull(),
+    createdAt: text("created_at").notNull().default(sql`CURRENT_TIMESTAMP`),
+  },
+);

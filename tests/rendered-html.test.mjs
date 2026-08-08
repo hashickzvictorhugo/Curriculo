@@ -30,6 +30,7 @@ test("server-renders the NexoCV product", async () => {
   assert.match(html, /Como funciona/);
   assert.match(html, /Setor da empresa/);
   assert.match(html, /Contexto da empresa/);
+  assert.doesNotMatch(html, /Painel administrativo|Administrar/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton|Your site is taking shape/i);
 });
 
