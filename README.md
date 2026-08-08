@@ -2,12 +2,14 @@
 
 Aplicação para comparar currículos com vagas e gerar um diagnóstico explicável
 de compatibilidade. A análise considera competências técnicas, experiência,
-aderência ao anúncio, habilidades comportamentais e formação.
+aderência ao anúncio, contexto profissional da empresa, habilidades
+comportamentais e formação.
 
 ## Produto
 
 - leitura de currículos em PDF, DOCX e TXT;
-- seleção de empresa e profissão;
+- catálogo com centenas de cargos, busca e profissão digitada livremente;
+- contexto da empresa por setor, prioridades e texto institucional;
 - descrição opcional da vaga para comparação específica;
 - nota detalhada, pontos fortes, lacunas e recomendações;
 - histórico privado associado à conta;

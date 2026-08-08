@@ -28,6 +28,8 @@ test("server-renders the NexoCV product", async () => {
   assert.match(html, /Seu currículo está falando/);
   assert.match(html, /Analisar meu currículo/);
   assert.match(html, /Como funciona/);
+  assert.match(html, /Setor da empresa/);
+  assert.match(html, /Contexto da empresa/);
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton|Your site is taking shape/i);
 });
 
