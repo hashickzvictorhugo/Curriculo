@@ -70,12 +70,9 @@ export function NexoCVApp({
   const [resultContext, setResultContext] = useState({ company: "", roleLabel: "", sectorLabel: "" });
   const [history, setHistory] = useState<HistoryItem[]>([]);
   const [historyLoading, setHistoryLoading] = useState(Boolean(user));
-  const [adminLauncherVisible, setAdminLauncherVisible] = useState(false);
   const [adminOpen, setAdminOpen] = useState(false);
   const fileInputRef = useRef<HTMLInputElement>(null);
   const resultRef = useRef<HTMLElement>(null);
-  const adminSequenceRef = useRef(0);
-  const adminSequenceTimerRef = useRef<number | null>(null);
 
   useEffect(() => {
     if (!user) return;
@@ -96,10 +93,6 @@ export function NexoCVApp({
       active = false;
     };
   }, [user]);
-
-  useEffect(() => () => {
-    if (adminSequenceTimerRef.current) window.clearTimeout(adminSequenceTimerRef.current);
-  }, []);
 
   async function selectFile(file: File) {
     setFormError("");
@@ -260,24 +253,6 @@ export function NexoCVApp({
       "Compare seu currículo antes de se candidatar.",
     ].filter(Boolean).join("\n");
     window.open(`https://wa.me/?text=${encodeURIComponent(message)}`, "_blank", "noopener,noreferrer");
-  }
-
-  function handleAdminSequence(token: "0" | "2") {
-    if (!isAdmin) return;
-    const sequence: Array<"0" | "2"> = ["0", "0", "0", "2", "2"];
-    const currentIndex = adminSequenceRef.current;
-    const nextIndex = token === sequence[currentIndex]
-      ? currentIndex + 1
-      : token === "0" ? 1 : 0;
-    adminSequenceRef.current = nextIndex;
-    if (adminSequenceTimerRef.current) window.clearTimeout(adminSequenceTimerRef.current);
-    adminSequenceTimerRef.current = window.setTimeout(() => {
-      adminSequenceRef.current = 0;
-    }, 8000);
-    if (nextIndex === sequence.length) {
-      adminSequenceRef.current = 0;
-      setAdminLauncherVisible(true);
-    }
   }
 
   return (
@@ -643,12 +618,17 @@ export function NexoCVApp({
         <nav aria-label="Links do rodapé"><a href="#como-funciona">Como funciona</a><a href="#seguranca">Privacidade</a><a href="#analisar">Nova análise</a></nav>
         <small>
           © {new Date().getFullYear()} NexoCV. Análise orientativa.
-          {isAdmin && <span className="admin-secret-code" aria-label="Código administrativo"><button type="button" onClick={() => handleAdminSequence("0")}>0</button><i>·</i><button type="button" onClick={() => handleAdminSequence("2")}>2</button></span>}
         </small>
       </footer>
 
-      {isAdmin && adminLauncherVisible && (
-        <button type="button" className="admin-launcher" onClick={() => setAdminOpen(true)} aria-haspopup="dialog">
+      {isAdmin && (
+        <button
+          type="button"
+          className="admin-launcher"
+          onClick={() => setAdminOpen(true)}
+          aria-haspopup="dialog"
+          aria-expanded={adminOpen}
+        >
           <span aria-hidden="true">✦</span> Administrar
         </button>
       )}
