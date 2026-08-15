@@ -4,7 +4,7 @@ import {
 } from "../app/chatgpt-auth";
 
 type RuntimeEnv = typeof import("cloudflare:workers").env & {
-  ADMIN_EMAILS?: string;
+  ADMIN_USER_IDS?: string;
 };
 
 export class AdminAuthError extends Error {
@@ -23,12 +23,12 @@ export async function requireAdminUser(): Promise<ChatGPTUser> {
     throw new AdminAuthError(401, "Faça login para acessar o painel administrativo.");
   }
 
-  const allowedEmails = await readAllowedEmails();
-  if (!allowedEmails.size) {
+  const allowedUserIds = await readAllowedUserIds();
+  if (!allowedUserIds.size) {
     throw new AdminAuthError(503, "O acesso administrativo ainda não foi configurado.");
   }
 
-  if (!allowedEmails.has(normalizeEmail(user.email))) {
+  if (!allowedUserIds.has(user.userId)) {
     throw new AdminAuthError(403, "Esta conta não tem acesso administrativo.");
   }
 
@@ -37,14 +37,14 @@ export async function requireAdminUser(): Promise<ChatGPTUser> {
 
 export async function isAdminUser(user: ChatGPTUser | null): Promise<boolean> {
   if (!user) return false;
-  return (await readAllowedEmails()).has(normalizeEmail(user.email));
+  return (await readAllowedUserIds()).has(user.userId);
 }
 
 export function isAdminAuthError(error: unknown): error is AdminAuthError {
   return error instanceof AdminAuthError;
 }
 
-async function readAllowedEmails(): Promise<Set<string>> {
+async function readAllowedUserIds(): Promise<Set<string>> {
   let runtimeEnv: RuntimeEnv;
   try {
     runtimeEnv = (await import("cloudflare:workers")).env as RuntimeEnv;
@@ -52,21 +52,17 @@ async function readAllowedEmails(): Promise<Set<string>> {
     return new Set();
   }
 
-  const rawValue = runtimeEnv.ADMIN_EMAILS;
+  const rawValue = runtimeEnv.ADMIN_USER_IDS;
   if (typeof rawValue !== "string") return new Set();
 
   return new Set(
     rawValue
       .split(/[;,\n]/)
-      .map(normalizeEmail)
-      .filter(isPlausibleEmail),
+      .map((value) => value.trim())
+      .filter(isPlausibleUserId),
   );
 }
 
-function normalizeEmail(value: string): string {
-  return value.trim().toLowerCase();
-}
-
-function isPlausibleEmail(value: string): boolean {
-  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+function isPlausibleUserId(value: string): boolean {
+  return value.length >= 16 && value.length <= 256 && !/\s/.test(value);
 }

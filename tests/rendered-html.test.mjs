@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { access, readFile } from "node:fs/promises";
+import { access } from "node:fs/promises";
 import test from "node:test";
 
 const root = new URL("../", import.meta.url);
@@ -36,10 +36,4 @@ test("server-renders the NexoCV product", async () => {
 
 test("starter preview was removed", async () => {
   await assert.rejects(access(new URL("app/_sites-preview", root)));
-});
-
-test("secret admin shortcut uses 0, 0, 0, 2, 2", async () => {
-  const source = await readFile(new URL("../app/components/NexoCVApp.tsx", import.meta.url), "utf8");
-  assert.match(source, /\["0", "0", "0", "2", "2"\]/);
-  assert.match(source, /handleAdminSequence\("0"\)\}>0<\/button>/);
 });

@@ -9,8 +9,11 @@
     "dev": "vinext dev",
     "build": "vinext build",
     "start": "vinext start",
-    "test": "pnpm run build && node --test tests/rendered-html.test.mjs",
+    "test": "pnpm run build && pnpm run test:unit",
+    "test:unit": "node --import=./tests/support/register-hooks.mjs --experimental-strip-types --test --test-isolation=none tests/matcher.test.mjs tests/rendered-html.test.mjs",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
+    "typecheck": "tsc --noEmit --incremental false",
+    "ci": "pnpm run lint && pnpm run typecheck && pnpm run build && pnpm run test:unit",
     "db:generate": "drizzle-kit generate"
   },
   "dependencies": {
@@ -45,5 +48,5 @@
     "wrangler": "4.92.0"
   },
   "type": "module",
-  "packageManager": "pnpm@11.16.0"
+  "packageManager": "pnpm@11.19.0"
 }
