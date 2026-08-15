@@ -220,4 +220,223 @@ export const ROLE_PROFILES: RoleProfile[] = [
     skill("Fiscalização e qualidade", "fiscalizacao", "fiscalização", "medicao", "medição", "controle de qualidade"),
   ]),
   profile("operations-industry", "Operações e Produção Industrial", "Operações", 1, [
-    skill("Processos produtivos", "producao", "p
+    skill("Processos produtivos", "producao", "produção", "linha de producao", "manufatura"),
+    skill("Planejamento e controle", "pcp", "planejamento de producao", "ordem de producao"),
+    skill("Qualidade", "inspecao", "inspeção", "controle de qualidade", "iso 9001"),
+    skill("Lean e melhoria contínua", "lean", "kaizen", "5s", "six sigma", "melhoria continua"),
+    skill("Máquinas e equipamentos", "maquinas", "máquinas", "equipamentos", "setup"),
+    skill("Indicadores operacionais", "oee", "produtividade", "refugo", "indicadores"),
+  ]),
+  profile("maintenance-technical", "Manutenção e Ofícios Técnicos", "Manutenção", 1, [
+    skill("Manutenção preventiva", "manutencao preventiva", "preventiva", "plano de manutencao"),
+    skill("Manutenção corretiva", "manutencao corretiva", "corretiva", "reparo"),
+    skill("Leitura de diagramas", "diagrama", "esquema eletrico", "desenho tecnico"),
+    skill("Diagnóstico de falhas", "diagnostico de falhas", "analise de falhas", "troubleshooting"),
+    skill("Ferramentas e instrumentos", "multimetro", "ferramentas", "instrumentos de medicao"),
+    skill("Segurança e normas", "nr 10", "nr 12", "nr 35", "seguranca"),
+  ]),
+  profile("retail", "Varejo e Loja", "Varejo", 1, [
+    skill("Atendimento e vendas", "atendimento", "vendas", "abordagem", "cliente"),
+    skill("Operação de caixa", "caixa", "pdv", "pagamentos", "fechamento de caixa"),
+    skill("Estoque e reposição", "estoque", "reposicao", "reposição", "inventario"),
+    skill("Merchandising", "merchandising", "exposicao", "exposição", "planograma"),
+    skill("Metas e indicadores", "metas", "ticket medio", "conversao", "vendas por metro"),
+    skill("Prevenção de perdas", "prevencao de perdas", "quebra", "perdas"),
+  ], [CUSTOMER_FOCUS, COMMUNICATION, ORGANIZATION, COLLABORATION]),
+  profile("hospitality-food", "Hotelaria, Eventos e Alimentação", "Serviços", 1, [
+    skill("Atendimento e hospitalidade", "hospitalidade", "hospede", "hóspede", "atendimento"),
+    skill("Operação de alimentos", "cozinha", "preparo", "ficha tecnica", "mise en place"),
+    skill("Boas práticas de alimentos", "boas praticas", "vigilancia sanitaria", "higiene"),
+    skill("Reservas e eventos", "reservas", "eventos", "check in", "check-in"),
+    skill("Custos e estoque", "cmv", "estoque", "compras", "controle de custos"),
+    skill("Serviço e experiência", "servico de mesa", "serviço de mesa", "satisfacao", "experiencia do cliente"),
+  ], [CUSTOMER_FOCUS, COMMUNICATION, ORGANIZATION, COLLABORATION]),
+  profile("environment-agri", "Meio Ambiente e Agronegócio", "Meio Ambiente e Agro", 2, [
+    skill("Gestão ambiental", "gestao ambiental", "licenciamento", "impacto ambiental"),
+    skill("ESG e sustentabilidade", "esg", "sustentabilidade", "emissoes", "residuos"),
+    skill("Produção agropecuária", "agricultura", "pecuaria", "safra", "manejo"),
+    skill("Geoprocessamento", "gis", "arcgis", "qgis", "geoprocessamento"),
+    skill("Qualidade e certificações", "iso 14001", "certificacao", "rastreabilidade"),
+    skill("Legislação e segurança", "legislacao ambiental", "nr 31", "ibama", "conama"),
+  ]),
+  profile("transport", "Transportes e Frota", "Transportes", 1, [
+    skill("Condução segura", "direcao defensiva", "direção defensiva", "cnh", "conducao"),
+    skill("Rotas e entregas", "rotas", "entregas", "roteirizacao", "gps"),
+    skill("Frota", "gestao de frota", "frota", "manutencao de veiculos"),
+    skill("Documentação de transporte", "cte", "mdfe", "nota fiscal", "documentacao"),
+    skill("Carga e descarga", "carga", "descarga", "movimentacao", "amarração"),
+    skill("Prazos e ocorrências", "prazo", "ocorrencias", "tracking", "canhoto"),
+  ], [ORGANIZATION, CUSTOMER_FOCUS, COMMUNICATION, PROBLEM_SOLVING]),
+  profile("public-social", "Setor Público e Impacto Social", "Público e Social", 2, [
+    skill("Políticas públicas", "politicas publicas", "gestao publica", "servico publico"),
+    skill("Projetos sociais", "projetos sociais", "impacto social", "terceiro setor"),
+    skill("Atendimento socioassistencial", "assistencia social", "acolhimento", "comunidade"),
+    skill("Captação de recursos", "captacao", "captação", "editais", "prestacao de contas"),
+    skill("Articulação institucional", "articulacao", "articulação", "parcerias", "rede de protecao"),
+    skill("Indicadores e relatórios", "indicadores sociais", "relatorios", "monitoramento"),
+  ], [COMMUNICATION, COLLABORATION, ORGANIZATION, PROBLEM_SOLVING]),
+  profile("security", "Segurança e Proteção", "Segurança", 1, [
+    skill("Controle de acesso", "controle de acesso", "portaria", "identificacao"),
+    skill("Rondas e vigilância", "ronda", "vigilancia", "monitoramento"),
+    skill("Prevenção de riscos", "prevencao", "risco", "seguranca patrimonial"),
+    skill("Resposta a emergências", "emergencia", "primeiros socorros", "combate a incendio"),
+    skill("CFTV e alarmes", "cftv", "alarme", "central de monitoramento"),
+    skill("Registros e protocolos", "livro de ocorrencias", "procedimentos", "protocolos"),
+  ], [ORGANIZATION, COMMUNICATION, PROBLEM_SOLVING, COLLABORATION]),
+  profile("realestate-insurance", "Imobiliário e Seguros", "Imobiliário e Seguros", 2, [
+    skill("Prospecção e atendimento", "prospeccao", "captação", "atendimento", "leads"),
+    skill("Negociação e fechamento", "negociacao", "fechamento", "proposta"),
+    skill("Contratos e documentação", "contratos", "documentacao", "escritura", "apolice"),
+    skill("Avaliação e risco", "avaliacao", "vistoria", "analise de risco", "subscricao"),
+    skill("CRM e carteira", "crm", "carteira", "renovacao", "follow up"),
+    skill("Regulação e conformidade", "susep", "creci", "regulacao", "compliance"),
+  ], [COMMUNICATION, CUSTOMER_FOCUS, ORGANIZATION, PROBLEM_SOLVING]),
+  profile("leadership-consulting", "Liderança e Consultoria", "Gestão e Estratégia", 4, [
+    skill("Estratégia de negócios", "estrategia", "planejamento estrategico", "business plan"),
+    skill("Gestão de pessoas", "gestao de pessoas", "lideranca", "desenvolvimento de equipe"),
+    skill("Gestão financeira", "p&l", "dre", "orcamento", "budget"),
+    skill("Processos e transformação", "processos", "transformacao", "melhoria continua"),
+    skill("Análise e solução", "analise de negocio", "diagnostico", "consultoria"),
+    skill("Governança e indicadores", "governanca", "kpi", "okr", "conselho"),
+  ], [LEADERSHIP, COMMUNICATION, ORGANIZATION, PROBLEM_SOLVING]),
+];
+
+const OCCUPATION_GROUPS: Array<{ profileId: string; titles: string[] }> = [
+  { profileId: "software", titles: [
+    "Desenvolvedor(a) de Software", "Desenvolvedor(a) Front-end", "Desenvolvedor(a) Back-end", "Desenvolvedor(a) Full Stack", "Desenvolvedor(a) Mobile", "Desenvolvedor(a) Web", "Desenvolvedor(a) Java", "Desenvolvedor(a) .NET", "Desenvolvedor(a) PHP", "Engenheiro(a) de Software",
+  ] },
+  { profileId: "data", titles: [
+    "Analista de Dados", "Analista de BI", "Cientista de Dados", "Engenheiro(a) de Dados", "Analista de Analytics", "Administrador(a) de Banco de Dados", "Arquiteto(a) de Dados", "Especialista em Machine Learning", "Analista de Pesquisa", "Analista de Inteligência de Mercado",
+  ] },
+  { profileId: "product-projects", titles: [
+    "Product Manager", "Product Owner", "Gerente de Projetos", "Analista de Projetos", "Coordenador(a) de Projetos", "Analista de PMO", "Scrum Master", "Agile Coach", "Analista de Produto", "Gerente de Programas",
+  ] },
+  { profileId: "marketing-communication", titles: [
+    "Analista de Marketing", "Analista de Marketing Digital", "Analista de Growth", "Especialista em SEO", "Social Media", "Analista de Conteúdo", "Copywriter", "Relações Públicas", "Assessor(a) de Imprensa", "Coordenador(a) de Marketing",
+  ] },
+  { profileId: "sales", titles: [
+    "Vendedor(a)", "SDR", "BDR", "Executivo(a) de Vendas", "Consultor(a) Comercial", "Executivo(a) de Contas", "Representante Comercial", "Supervisor(a) de Vendas", "Analista de Sales Operations", "Gerente Comercial",
+  ] },
+  { profileId: "administrative", titles: [
+    "Auxiliar Administrativo(a)", "Assistente Administrativo(a)", "Analista Administrativo(a)", "Secretário(a) Executivo(a)", "Recepcionista", "Office Manager", "Assistente de Backoffice", "Assistente de Diretoria", "Digitador(a)", "Arquivista",
+  ] },
+  { profileId: "finance", titles: [
+    "Analista Financeiro(a)", "Assistente Financeiro(a)", "Analista de Tesouraria", "Analista de Contas a Pagar", "Analista de Contas a Receber", "Analista de Crédito", "Controller", "Analista de FP&A", "Analista de Cobrança", "Analista de Investimentos",
+  ] },
+  { profileId: "accounting", titles: [
+    "Contador(a)", "Assistente Contábil", "Analista Contábil", "Analista Fiscal", "Assistente Fiscal", "Auditor(a) Contábil", "Analista de Custos", "Analista Tributário(a)", "Perito(a) Contábil", "Coordenador(a) Contábil",
+  ] },
+  { profileId: "hr", titles: [
+    "Analista de Recursos Humanos", "Recrutador(a)", "Analista de Departamento Pessoal", "HR Business Partner", "Analista de DHO", "Analista de Folha de Pagamento", "Analista de Cargos e Salários", "Analista de People Analytics", "Talent Acquisition", "Analista de Treinamento",
+  ] },
+  { profileId: "customer", titles: [
+    "Customer Success", "Analista de Suporte ao Cliente", "Atendente", "Operador(a) de SAC", "Analista de Customer Experience", "Analista de Ouvidoria", "Consultor(a) de Implantação", "Gerente de Contas", "Especialista de Onboarding", "Técnico(a) de Suporte",
+  ] },
+  { profileId: "design-creative", titles: [
+    "UX/UI Designer", "Designer Gráfico(a)", "Product Designer", "Motion Designer", "Ilustrador(a)", "Editor(a) de Vídeo", "Diretor(a) de Arte", "Fotógrafo(a)", "Web Designer", "Designer de Marca",
+  ] },
+  { profileId: "logistics-procurement", titles: [
+    "Analista de Logística", "Analista de Supply Chain", "Estoquista", "Auxiliar de Armazém", "Comprador(a)", "Analista de Compras", "Analista de Importação e Exportação", "Planejador(a) de Demanda", "Expedidor(a)", "Supervisor(a) de Armazém",
+  ] },
+  { profileId: "cyber-infra", titles: [
+    "Analista de Segurança da Informação", "Analista de SOC", "Engenheiro(a) de Cloud", "Engenheiro(a) DevOps", "Site Reliability Engineer", "Analista de Redes", "Administrador(a) de Sistemas", "Analista de Infraestrutura", "Arquiteto(a) de Cloud", "Analista de Service Desk",
+  ] },
+  { profileId: "legal", titles: [
+    "Advogado(a) Cível", "Advogado(a) Trabalhista", "Advogado(a) Empresarial", "Assistente Jurídico(a)", "Analista Jurídico(a)", "Analista de Compliance", "Encarregado(a) de Dados - DPO", "Analista de Contratos", "Advogado(a) Tributário(a)", "Controller Jurídico(a)",
+  ] },
+  { profileId: "health", titles: [
+    "Médico(a)", "Dentista", "Fisioterapeuta", "Psicólogo(a)", "Nutricionista", "Terapeuta Ocupacional", "Fonoaudiólogo(a)", "Educador(a) Físico(a)", "Técnico(a) em Radiologia", "Agente Comunitário(a) de Saúde",
+  ] },
+  { profileId: "nursing", titles: [
+    "Enfermeiro(a)", "Técnico(a) de Enfermagem", "Auxiliar de Enfermagem", "Enfermeiro(a) Obstetra", "Enfermeiro(a) de UTI", "Enfermeiro(a) de Emergência", "Enfermeiro(a) Auditor(a)", "Coordenador(a) de Enfermagem", "Cuidador(a) de Idosos", "Instrumentador(a) Cirúrgico(a)",
+  ] },
+  { profileId: "lab-pharma", titles: [
+    "Farmacêutico(a)", "Biomédico(a)", "Analista de Laboratório", "Técnico(a) de Laboratório", "Químico(a)", "Biólogo(a)", "Microbiologista", "Analista de Pesquisa Clínica", "Analista de Qualidade Farmacêutica", "Operador(a) de Produção Farmacêutica",
+  ] },
+  { profileId: "education", titles: [
+    "Professor(a) de Educação Infantil", "Professor(a) do Ensino Fundamental", "Professor(a) de Português", "Professor(a) de Matemática", "Professor(a) de Inglês", "Professor(a) de História", "Professor(a) de Geografia", "Pedagogo(a)", "Coordenador(a) Pedagógico(a)", "Tutor(a) de Ensino a Distância",
+  ] },
+  { profileId: "engineering", titles: [
+    "Engenheiro(a) Mecânico(a)", "Engenheiro(a) Eletricista", "Engenheiro(a) de Produção", "Engenheiro(a) Químico(a)", "Engenheiro(a) de Computação", "Engenheiro(a) de Automação", "Engenheiro(a) de Telecomunicações", "Engenheiro(a) Mecatrônico(a)", "Engenheiro(a) de Segurança do Trabalho", "Engenheiro(a) de Aplicação",
+  ] },
+  { profileId: "construction-architecture", titles: [
+    "Engenheiro(a) Civil", "Arquiteto(a)", "Técnico(a) em Edificações", "Mestre de Obras", "Pedreiro(a)", "Pintor(a) de Obras", "Carpinteiro(a)", "Topógrafo(a)", "Desenhista Projetista", "Orçamentista de Obras",
+  ] },
+  { profileId: "operations-industry", titles: [
+    "Operador(a) de Produção", "Analista de Produção", "Analista de PCP", "Analista de Qualidade", "Supervisor(a) de Produção", "Gerente Industrial", "Analista de Processos", "Operador(a) de Máquinas", "Inspetor(a) de Qualidade", "Auxiliar de Embalagem",
+  ] },
+  { profileId: "maintenance-technical", titles: [
+    "Eletricista", "Mecânico(a) Industrial", "Mecânico(a) Automotivo(a)", "Eletrotécnico(a)", "Técnico(a) em Eletrônica", "Técnico(a) em Climatização", "Soldador(a)", "Torneiro(a) Mecânico(a)", "Técnico(a) de Manutenção", "Técnico(a) em Refrigeração",
+  ] },
+  { profileId: "retail", titles: [
+    "Operador(a) de Caixa", "Atendente de Loja", "Vendedor(a) de Loja", "Gerente de Loja", "Supervisor(a) de Loja", "Promotor(a) de Vendas", "Repositor(a)", "Fiscal de Prevenção de Perdas", "Visual Merchandiser", "Consultor(a) de Franquias",
+  ] },
+  { profileId: "hospitality-food", titles: [
+    "Chef de Cozinha", "Cozinheiro(a)", "Auxiliar de Cozinha", "Garçom/Garçonete", "Bartender", "Recepcionista de Hotel", "Gerente de Hotel", "Produtor(a) de Eventos", "Guia de Turismo", "Confeiteiro(a)",
+  ] },
+  { profileId: "environment-agri", titles: [
+    "Analista Ambiental", "Engenheiro(a) Ambiental", "Engenheiro(a) Agrônomo(a)", "Médico(a) Veterinário(a)", "Técnico(a) Agrícola", "Gerente de Fazenda", "Zootecnista", "Engenheiro(a) Florestal", "Geólogo(a)", "Analista de ESG",
+  ] },
+  { profileId: "transport", titles: [
+    "Motorista de Caminhão", "Motorista de Entregas", "Motociclista Entregador(a)", "Gestor(a) de Frota", "Despachante de Transportes", "Auxiliar de Carga e Descarga", "Analista de Tráfego", "Operador(a) Ferroviário(a)", "Motorista de Ônibus", "Motorista Executivo(a)",
+  ] },
+  { profileId: "public-social", titles: [
+    "Assistente Social", "Analista de Políticas Públicas", "Coordenador(a) de Projetos Sociais", "Educador(a) Social", "Analista de Captação de Recursos", "Gestor(a) Público(a)", "Analista de Serviço Público", "Analista de Relações Internacionais", "Cientista Político(a)", "Agente de Desenvolvimento Social",
+  ] },
+  { profileId: "security", titles: [
+    "Vigilante", "Agente de Segurança Patrimonial", "Técnico(a) de Segurança do Trabalho", "Bombeiro(a) Civil", "Investigador(a) Particular", "Porteiro(a)", "Controlador(a) de Acesso", "Supervisor(a) de Segurança", "Agente Penitenciário(a)", "Salva-vidas",
+  ] },
+  { profileId: "realestate-insurance", titles: [
+    "Corretor(a) de Imóveis", "Administrador(a) de Condomínios", "Avaliador(a) de Imóveis", "Consultor(a) de Locação", "Analista Imobiliário(a)", "Corretor(a) de Seguros", "Analista de Sinistros", "Subscritor(a) de Seguros", "Analista Atuarial", "Consultor(a) de Seguros",
+  ] },
+  { profileId: "leadership-consulting", titles: [
+    "Gerente Geral", "Gerente de Operações", "Consultor(a) de Negócios", "Analista de Estratégia", "Consultor(a) de Gestão", "Analista de Negócios", "Empreendedor(a)", "Chief of Staff", "Diretor(a) Comercial", "Diretor(a) de Operações",
+  ] },
+];
+
+const profileById = new Map(ROLE_PROFILES.map((item) => [item.id, item]));
+
+export const OCCUPATIONS: OccupationOption[] = OCCUPATION_GROUPS.flatMap((group) => {
+  const area = profileById.get(group.profileId)?.area ?? "Outras áreas";
+  return group.titles.map((title) => ({
+    id: `${group.profileId}-${slugify(title)}`.slice(0, 78),
+    title,
+    area,
+    profileId: group.profileId,
+    aliases: titleAliases(title),
+  }));
+}).sort((a, b) => a.title.localeCompare(b.title, "pt-BR"));
+
+export function findOccupation(value: string): OccupationOption | null {
+  const normalized = normalizeCatalogValue(value);
+  if (!normalized) return null;
+  return OCCUPATIONS.find((occupation) =>
+    occupation.id === value ||
+    normalizeCatalogValue(occupation.title) === normalized ||
+    occupation.aliases.some((alias) => normalizeCatalogValue(alias) === normalized),
+  ) ?? null;
+}
+
+export function getProfileById(profileId: string): RoleProfile | null {
+  if (profileId === GENERIC_PROFILE.id) return GENERIC_PROFILE;
+  return profileById.get(profileId) ?? null;
+}
+
+export function createRoleId(title: string): string {
+  return `custom-${slugify(title) || "profissao"}`.slice(0, 78);
+}
+
+function titleAliases(title: string): string[] {
+  const neutral = title.replace(/\([ao]\)/gi, "").replace(/\s+/g, " ").trim();
+  const withoutSpecialty = neutral.split(" - ")[0].trim();
+  return [...new Set([neutral, withoutSpecialty])].filter((alias) => alias !== title);
+}
+
+function slugify(value: string): string {
+  return normalizeCatalogValue(value).replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "").slice(0, 62);
+}
+
+function normalizeCatalogValue(value: string): string {
+  return value.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase()
+    .replace(/\([ao]\)/g, "").replace(/[^a-z0-9+#.]+/g, " ").replace(/\s+/g, " ").trim();
+}

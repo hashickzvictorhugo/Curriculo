@@ -372,6 +372,368 @@ export function NexoCVApp({
               <div className="form-title"><span className="title-number">01</span><div><h3>{siteConfig.content.companyStepTitle}</h3><p>{siteConfig.content.companyStepDescription}</p></div></div>
               <div className="field-grid">
                 <label className="field">
-                  <span>Nome dÛÎô¶‰ËkºwµçEµ•¹Ñ…°ˆİ•¥¡Ğõí€‘íÍ¥Ñ•½¹™¥œ¹İ•¥¡ÑÌ¹Í½™ÑM­¥±±Íô•ôÑ•áĞô‰M¥¹…¥Ì‘”½±…‰½É‡Ÿ¼°½µÕ¹¥‡Ÿ¼”½É…¹¥é‡Ÿ¼¸ˆ€¼ø(€€€€€€€€€€€€€€€€ñÉ¥Ñ•É¥½¸¥½¸ô‹ŠZ„ˆÑ¥Ñ±”ô‰½Éµ‡Ÿ¼ˆİ•¥¡Ğõí€‘íÍ¥Ñ•½¹™¥œ¹İ•¥¡ÑÌ¹•‘Õ…Ñ¥½¹ô•ôÑ•áĞô‰½Éµ‡Ÿ¼……“©µ¥„”Ó¥¹¥„¥‘•¹Ñ¥™¥…‘„¸ˆ€¼ø(€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰É¥Ñ•É¥„µÑ¥ÀˆøñÍÁ…¸ûŠr˜ğ½ÍÁ…¸øñÀøñÍÑÉ½¹œùíÍ¥Ñ•½¹™¥œ¹½¹Ñ•¹Ğ¹É¥Ñ•É¥…Q¥ÁQ¥Ñ±•ôğ½ÍÑÉ½¹œùíÍ¥Ñ•½¹™¥œ¹½¹Ñ•¹Ğ¹É¥Ñ•É¥…Q¥Á•ÍÉ¥ÁÑ¥½¹ôğ½Àøğ½‘¥Øø(€€€€€€€€€€€€ğ½…Í¥‘”ø(€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€ğ½‘¥Øø(€€€€€€ğ½Í•Ñ¥½¸ø((€€€€€íÉ•ÍÕ±Ğ€˜˜€ (€€€€€€€€ñÍ•Ñ¥½¸±…ÍÍ9…µ”ô‰É•ÍÕ±ÑÌµÍ•Ñ¥½¸ˆÉ•˜õíÉ•ÍÕ±ÑI•™ô…É¥„µ±¥Ù”ô‰Á½±¥Ñ”ˆø(€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰É•ÍÕ±Ğµ¡•…‘•Èˆø(€€€€€€€€€€€€ñ‘¥ØøñÍÁ…¸±…ÍÍ9…µ”ô‰Í•Ñ¥½¸µ­¥­•ÈˆùM•Ô‘¥…»ÍÍÑ¥¼ğ½ÍÁ…¸øñ ÈùíÉ•ÍÕ±Ñ½¹Ñ•áĞ¹É½±•1…‰•±ôğ½ ÈøñÀùíÉ•ÍÕ±Ñ½¹Ñ•áĞ¹½µÁ…¹åõíÉ•ÍÕ±Ñ½¹Ñ•áĞ¹Í•Ñ½É1…‰•°€ü€ƒŠˆ€‘íÉ•ÍÕ±Ñ½¹Ñ•áĞ¹Í•Ñ½É1…‰•±õ€€è€ˆ‰ôğ½Àøğ½‘¥Øø(€€€€€€€€€€€€ñ‰ÕÑÑ½¸ÑåÁ”ô‰‰ÕÑÑ½¸ˆ±…ÍÍ9…µ”ô‰¡½ÍĞµ‰ÕÑÑ½¸ˆ½¹±¥¬õíÉ•Í•Ñ¹…±åÍ¥Íôù9½Ù„…»…±¥Í”ğ½‰ÕÑÑ½¸ø(€€€€€€€€€€ğ½‘¥Øø((€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰É•ÍÕ±Ğµ½Ù•ÉÙ¥•Üˆø(€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰É•ÍÕ±ĞµÍ½É”µ…Éˆø(€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰Í½É”µÉ¥¹œÉ•ÍÕ±ĞµÉ¥¹œˆÍÑå±”õíì€ˆ´µÍ½É”ˆè€‘íÉ•ÍÕ±Ğ¹Í½É”€¨€Ì¸Ùõ‘•€ô…ÌMMAÉ½Á•ÉÑ¥•ÍôøñÍÁ…¸øñˆùíÉ•ÍÕ±Ğ¹Í½É•ôğ½ˆøñÍµ…±°ø¼ÄÀÀğ½Íµ…±°øğ½ÍÁ…¸øğ½‘¥Øø(€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰É•ÍÕ±ĞµÍ½É”µ½ÁäˆøñÍÁ…¸±…ÍÍ9…µ”ô‰É•ÍÕ±Ğµ±•Ù•°ˆùíÉ•ÍÕ±Ğ¹±•Ù•±ôğ½ÍÁ…¸øñ ÌùíÉ•ÍÕ±Ğ¹Í½É”€øô€ÜÀ€ü€‰M•ÔÕÉËµÕ±¼•ÍÓ„¹¼…µ¥¹¡¼•ÉÑ¼¸ˆ€è€‰#„•ÍÁ‡¼±…É¼Á…É„…¹¡…È…‘•Ë©¹¥„¸‰ôğ½ ÌøñÀùíÉ•ÍÕ±Ğ¹ÍÕµµ…Éåôğ½Àøğ½‘¥Øø(€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰É•ÍÕ±Ğµ…Ñ¥½¹Ìˆø(€€€€€€€€€€€€€€ñ‰ÕÑÑ½¸ÑåÁ”ô‰‰ÕÑÑ½¸ˆ±…ÍÍ9…µ”ô‰İ¡…ÑÍ…ÁÀµ‰ÕÑÑ½¸ˆ½¹±¥¬õíÍ¡…É•=¹]¡…ÑÍÁÁôøñÍÁ…¸…É¥„µ¡¥‘‘•¸ô‰ÑÉÕ”ˆûŠ^$ğ½ÍÁ…¸ø½µÁ…ÉÑ¥±¡…È¹¼]¡…ÑÍÁÀğ½‰ÕÑÑ½¸ø(€€€€€€€€€€€€€íÍ…Ù•9½Ñ¥”€˜˜€ñÀùíÍ…Ù•9½Ñ¥•ôğ½Àùô(€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€ğ½‘¥Øø((€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰É•ÍÕ±ĞµÉ¥ˆø(€€€€€€€€€€€€ñ…ÉÑ¥±”±…ÍÍ9…µ”ô‰É•ÍÕ±Ğµ…É‘¥µ•¹Í¥½¹Ìµ…Éˆø(€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰…Éµ¡•…‘¥¹œˆøñÍÁ…¸±…ÍÍ9…µ”ô‰…Éµ¥½¸¥¹‘¥¼ˆûŠ&„ğ½ÍÁ…¸øñ‘¥Øøñ Ìù½µÁ½Í§Ÿ¼‘„¹½Ñ„ğ½ ÌøñÀùY•©„½¹‘”¼ÕÉËµÕ±¼…¹¡„½ÔÁ•É‘”Á½¹Ñ½Ì¸ğ½Àøğ½‘¥Øøğ½‘¥Øø(€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰‘¥µ•¹Í¥½¸µ±¥ÍĞˆø(€€€€€€€€€€€€€€€íÉ•ÍÕ±Ğ¹‘¥µ•¹Í¥½¹Ì¹µ…À ¡‘¥µ•¹Í¥½¸¤€ôø€ (€€€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰‘¥µ•¹Í¥½¸ˆ­•äõí‘¥µ•¹Í¥½¸¹¥‘ôø(€€€€€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰‘¥µ•¹Í¥½¸µÑ½ÀˆøñÍÁ…¸ùí‘¥µ•¹Í¥½¸¹±…‰•±õíÑåÁ•½˜‘¥µ•¹Í¥½¸¹İ•¥¡Ğ€ôôô€‰¹Õµ‰•Èˆ€˜˜€ñÍµ…±°ùí‘¥µ•¹Í¥½¸¹İ•¥¡Ñô”‘„¹½Ñ„¹•ÍÑ„…»…±¥Í”ğ½Íµ…±°ùôğ½ÍÁ…¸øñˆùí‘¥µ•¹Í¥½¸¹Í½É•ô”ğ½ˆøğ½‘¥Øø(€€€€€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰ÁÉ½É•ÍÌµÑÉ…¬ˆøñÍÁ…¸ÍÑå±”õíìİ¥‘Ñ è€‘í‘¥µ•¹Í¥½¸¹Í½É•ô•€õô€¼øğ½‘¥Øø(€€€€€€€€€€€€€€€€€€€€ñÍµ…±°ùí‘¥µ•¹Í¥½¸¹‘•Ñ…¥±ôğ½Íµ…±°ø(€€€€€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€€€€€¤¥ô(€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€ğ½…ÉÑ¥±”ø((€€€€€€€€€€€€ñ…ÉÑ¥±”±…ÍÍ9…µ”ô‰É•ÍÕ±Ğµ…É½µÁ…¹äµµ…Ñ µ…Éˆø(€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰…Éµ¡•…‘¥¹œˆøñÍÁ…¸±…ÍÍ9…µ”ô‰…Éµ¥½¸½µÁ…¹äˆûŠ^¬ğ½ÍÁ…¸øñ‘¥Øøñ Ìù½¹•ã¼½´„•µÁÉ•Í„ğ½ ÌøñÀùM•Ñ½È”ÁÉ¥½É¥‘…‘•ÌÁÉ½™¥ÍÍ¥½¹…¥Ì°Í•´…‘¥Ù¥¹¡…ÈÕ±ÑÕÉ„¸ğ½Àøğ½‘¥Øøğ½‘¥Øø(€€€€€€€€€€€€€íÉ•ÍÕ±Ğ¹½µÁ…¹å5…Ñ €ü€ (€€€€€€€€€€€€€€€€ğø(€€€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰½µÁ…¹äµÍ½É”µ±¥¹”ˆø(€€€€€€€€€€€€€€€€€€€€ñ‘¥ØøñÍÑÉ½¹œùíÉ•ÍÕ±Ğ¹½µÁ…¹å5…Ñ ¹Í½É•ô”ğ½ÍÑÉ½¹œøñÍÁ…¸ù‘”…‘•Ë©¹¥„…¼½¹Ñ•áÑ¼¥¹™½Éµ…‘¼ğ½ÍÁ…¸øğ½‘¥Øø(€€€€€€€€€€€€€€€€€€€€ñÍÁ…¸±…ÍÍ9…µ”ô‰½µÁ…¹äµÍ•Ñ½ÈµÁ¥±°ˆùíÉ•ÍÕ±Ğ¹½µÁ…¹å5…Ñ ¹Í•Ñ½É1…‰•±ôğ½ÍÁ…¸ø(€€€€€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€€€€€€€ñÀ±…ÍÍ9…µ”ô‰½µÁ…¹äµµ…Ñ µ‘•Ñ…¥°ˆùíÉ•ÍÕ±Ğ¹½µÁ…¹å5…Ñ ¹‘•Ñ…¥±ôğ½Àø(€€€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰½µÁ…¹äµÍ¥¹…°µ‰±½¬ˆø(€€€€€€€€€€€€€€€€€€€€ñ ĞùÙ¥“©¹¥…Ì•¹½¹ÑÉ…‘…Ìğ½ Ğø(€€€€€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰Ñ…œµ±½ÕÁ½Í¥Ñ¥Ù”½µÁ…Ğˆø(€€€€€€€€€€€€€€€€€€€€€íÉ•ÍÕ±Ğ¹½µÁ…¹å5…Ñ ¹µ…Ñ¡•‘M¥¹…±Ì¹±•¹Ñ (€€€€€€€€€€€€€€€€€€€€€€€€üÉ•ÍÕ±Ğ¹½µÁ…¹å5…Ñ ¹µ…Ñ¡•‘M¥¹…±Ì¹µ…À ¡¥Ñ•´¤€ôø€ñÍÁ…¸­•äõí¥Ñ•µôûŠrLí¥Ñ•µôğ½ÍÁ…¸ø¤(€€€€€€€€€€€€€€€€€€€€€€€€è€ñÀ±…ÍÍ9…µ”ô‰•µÁÑäµ½Áäˆù<ÕÉËµÕ±¼…¥¹‘„»¼‘•¥á„•Ù¥‘•¹Ñ”•áÁ•É§©¹¥„±¥…‘„„•ÍÍ”½¹Ñ•áÑ¼¸ğ½Àùô(€€€€€€€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€€€€€€ì„…É•ÍÕ±Ğ¹½µÁ…¹å5…Ñ ¹µ¥ÍÍ¥¹M¥¹…±Ì¹±•¹Ñ €˜˜€ (€€€€€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰½µÁ…¹äµÍ¥¹…°µ‰±½¬µ¥ÍÍ¥¹œˆø(€€€€€€€€€€€€€€€€€€€€€€ñ ĞùM¥¹…¥ÌÅÕ”Á½‘•´™¥…Èµ…¥Ì±…É½Ìğ½ Ğø(€€€€€€€€€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰Ñ…œµ±½Õİ…É¹¥¹œ½µÁ…ĞˆùíÉ•ÍÕ±Ğ¹½µÁ…¹å5…Ñ ¹µ¥ÍÍ¥¹M¥¹…±Ì¹Í±¥” À°€Ø¤¹µ…À ¡¥Ñ•´¤€ôø€ñÍÁ…¸­•äõí¥Ñ•µôø¬í¥Ñ•µôğ½ÍÁ…¸ø¥ôğ½‘¥Øø(€€€€€€€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€€€€€€€¥ô(€€€€€€€€€€€€€€€€ğ¼ø(€€€€€€€€€€€€€€¤€è€ (€€€€€€€€€€€€€€€€ñÀ±…ÍÍ9…µ”ô‰•µÁÑäµ½Áä±•…äµ½µÁ…¹äµ½ÁäˆùÍÑ„…»…±¥Í”™½¤É¥…‘„…¹Ñ•Ì‘”¼½¹Ñ•áÑ¼‘„•µÁÉ•Í„•¹ÑÉ…È¹„¹½Ñ„¸‡„Õµ„¹½Ù„…»…±¥Í”Á…É„Ù•È•ÍÍ„‘¥µ•¹Ï¼¸ğ½Àø(€€€€€€€€€€€€€€¥ô(€€€€€€€€€€€€ğ½…ÉÑ¥±”ø((€€€€€€€€€€€€ñ…ÉÑ¥±”±…ÍÍ9…µ”ô‰É•ÍÕ±Ğµ…ÉÍ­¥±±Ìµ…Éˆø(€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰…Éµ¡•…‘¥¹œˆøñÍÁ…¸±…ÍÍ9…µ”ô‰…Éµ¥½¸É••¸ˆûŠrLğ½ÍÁ…¸øñ‘¥Øøñ Ìù½µÁ•Ó©¹¥…Ì•¹½¹ÑÉ…‘…Ìğ½ ÌøñÀù<ÅÕ”«„…Á…É•”„Í•Ô™…Ù½È¸ğ½Àøğ½‘¥Øøğ½‘¥Øø(€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰Ñ…œµ±½ÕÁ½Í¥Ñ¥Ù”ˆø(€€€€€€€€€€€€€€€íÉ•ÍÕ±Ğ¹µ…Ñ¡•‘M­¥±±Ì¹±•¹Ñ €üÉ•ÍÕ±Ğ¹µ…Ñ¡•‘M­¥±±Ì¹µ…À ¡¥Ñ•´¤€ôø€ñÍÁ…¸­•äõí¥Ñ•µôûŠrLí¥Ñ•µôğ½ÍÁ…¸ø¤€è€ñÀ±…ÍÍ9…µ”ô‰•µÁÑäµ½ÁäˆùÌ½µÁ•Ó©¹¥…ÌÁ½‘•´•ÍÑ…È¹¼ÕÉËµÕ±¼°µ…Ì»¼…Á…É••É…´½´½ÌÑ•Éµ½Ì•ÍÁ•É…‘½Ì¸ğ½Àùô(€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰…ÉµÍÕ‰Í•Ñ¥½¸ˆøñ Ğù1…Õ¹…Ìµ…¥ÌÉ•±•Ù…¹Ñ•Ìğ½ Ğøñ‘¥Ø±…ÍÍ9…µ”ô‰Ñ…œµ±½Õİ…É¹¥¹œˆùíÉ•ÍÕ±Ğ¹µ¥ÍÍ¥¹M­¥±±Ì¹Í±¥” À°€Ø¤¹µ…À ¡¥Ñ•´¤€ôø€ñÍÁ…¸­•äõí¥Ñ•µôø¬í¥Ñ•µôğ½ÍÁ…¸ø¥ôğ½‘¥Øøğ½‘¥Øø(€€€€€€€€€€€€ğ½…ÉÑ¥±”ø((€€€€€€€€€€€€ñ…ÉÑ¥±”±…ÍÍ9…µ”ô‰É•ÍÕ±Ğµ…ÉÍÑÉ•¹Ñ¡Ìµ…Éˆø(€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰…Éµ¡•…‘¥¹œˆøñÍÁ…¸±…ÍÍ9…µ”ô‰…Éµ¥½¸‰±Õ”ˆûŠ\ğ½ÍÁ…¸øñ‘¥Øøñ Ìù1•¥ÑÕÉ„‘¼ÕÉËµÕ±¼ğ½ ÌøñÀùA½¹Ñ½Ì™½ÉÑ•Ì”Í¥¹…¥ÌÅÕ”™…±Ñ…É…´¸ğ½Àøğ½‘¥Øøğ½‘¥Øø(€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰¥¹Í¥¡Ğµ½±Õµ¹Ìˆø(€€€€€€€€€€€€€€€€ñ‘¥Øøñ ĞøñÍÁ…¸±…ÍÍ9…µ”ô‰Á½Í¥Ñ¥Ù”µ‘½Ğˆ€¼øA½¹Ñ½Ì™½ÉÑ•Ìğ½ ĞøñÕ°ùíÉ•ÍÕ±Ğ¹ÍÑÉ•¹Ñ¡Ì¹µ…À ¡¥Ñ•´¤€ôø€ñ±¤­•äõí¥Ñ•µôùí¥Ñ•µôğ½±¤ø¥ôğ½Õ°øğ½‘¥Øø(€€€€€€€€€€€€€€€€ñ‘¥Øøñ ĞøñÍÁ…¸±…ÍÍ9…µ”ô‰İ…É¹¥¹œµ‘½Ğˆ€¼ø<ÅÕ”µ•É•”…Ñ•»Ÿ¼ğ½ ĞøñÕ°ùíÉ•ÍÕ±Ğ¹…ÁÌ¹µ…À ¡¥Ñ•´¤€ôø€ñ±¤­•äõí¥Ñ•µôùí¥Ñ•µôğ½±¤ø¥ôğ½Õ°øğ½‘¥Øø(€€€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€€€ğ½…ÉÑ¥±”ø((€€€€€€€€€€€€ñ…ÉÑ¥±”±…ÍÍ9…µ”ô‰É•ÍÕ±Ğµ…ÉÉ•½µµ•¹‘…Ñ¥½¹Ìµ…Éˆø(€€€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰…Éµ¡•…‘¥¹œˆøñÍÁ…¸±…ÍÍ9…µ”ô‰…Éµ¥½¸…µ‰•ÈˆûŠr˜ğ½ÍÁ…¸øñ‘¥Øøñ ÌùAËÍá¥µ½Ì…©ÕÍÑ•Ìğ½ ÌøñÀùŸÕ•ÌÁË…Ñ¥…Ì…¹Ñ•Ì‘”Í”…¹‘¥‘…Ñ…È¸ğ½Àøğ½‘¥Øøğ½‘¥Øø(€€€€€€€€€€€€€€ñ½°±…ÍÍ9…µ”ô‰É•½µµ•¹‘…Ñ¥½¸µ±¥ÍĞˆùíÉ•ÍÕ±Ğ¹É•½µµ•¹‘…Ñ¥½¹Ì¹µ…À ¡¥Ñ•´°¥¹‘•à¤€ôø€ñ±¤­•äõí¥Ñ•µôøñÍÁ…¸ùí¥¹‘•à€¬€Åôğ½ÍÁ…¸øñÀùí¥Ñ•µôğ½Àøğ½±¤ø¥ôğ½½°ø(€€€€€€€€€€€€ğ½…ÉÑ¥±”ø(€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€ñÀ±…ÍÍ9…µ”ô‰É•ÍÕ±Ğµ‘¥Í±…¥µ•Èˆù¹½Ñ„µ½ÍÑÉ„…‘•Ë©¹¥„Ñ•áÑÕ…°”•Ù¥“©¹¥…ÌÁÉ½™¥ÍÍ¥½¹…¥Ì¸±„»¼ÁÉ•Û¨½¹ÑÉ…Ñ‡Ÿ¼°‘•Í•µÁ•¹¡¼½ÔÁ½Ñ•¹¥…°”¹Õ¹„‘•Ù”Í•ÈÕÍ…‘„½µ¼‘•¥Ï¼…ÕÑ½·…Ñ¥„¸ğ½Àø(€€€€€€€€ğ½Í•Ñ¥½¸ø(€€€€€€¥ô((€€€€€€ñÍ•Ñ¥½¸±…ÍÍ9…µ”ô‰¡½ÜµÍ•Ñ¥½¸ˆ¥ô‰½µ¼µ™Õ¹¥½¹„ˆø(€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰Í•Ñ¥½¸µ¡•…‘¥¹œˆøñÍÁ…¸±…ÍÍ9…µ”ô‰Í•Ñ¥½¸µ­¥­•ÈˆùíÍ¥Ñ•½¹™¥œ¹½¹Ñ•¹Ğ¹¡½İ-¥­•Éôğ½ÍÁ…¸øñ ÈùíÍ¥Ñ•½¹™¥œ¹½¹Ñ•¹Ğ¹¡½İQ¥Ñ±•ôğ½ ÈøñÀùíÍ¥Ñ•½¹™¥œ¹½¹Ñ•¹Ğ¹¡½İ•ÍÉ¥ÁÑ¥½¹ôğ½Àøğ½‘¥Øø(€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰¡½ÜµÉ¥ˆø(€€€€€€€€€€ñ!½İ…É¹Õµ‰•ÈôˆÀÄˆÍåµ‰½°ô‹Š”ˆÑ¥Ñ±”õíÍ¥Ñ•½¹™¥œ¹½¹Ñ•¹Ğ¹¡½İMÑ•ÀÅQ¥Ñ±•ôÑ•áĞõíÍ¥Ñ•½¹™¥œ¹½¹Ñ•¹Ğ¹¡½İMÑ•ÀÅ•ÍÉ¥ÁÑ¥½¹ô€¼ø(€€€€€€€€€€ñ!½İ…É¹Õµ‰•ÈôˆÀÈˆÍåµ‰½°ô‹Š2TˆÑ¥Ñ±”õíÍ¥Ñ•½¹™¥œ¹½¹Ñ•¹Ğ¹¡½İMÑ•ÀÉQ¥Ñ±•ôÑ•áĞõíÍ¥Ñ•½¹™¥œ¹½¹Ñ•¹Ğ¹¡½İMÑ•ÀÉ•ÍÉ¥ÁÑ¥½¹ô€¼ø(€€€€€€€€€€ñ!½İ…É¹Õµ‰•ÈôˆÀÌˆÍåµ‰½°ô‹Š\ˆÑ¥Ñ±”õíÍ¥Ñ•½¹™¥œ¹½¹Ñ•¹Ğ¹¡½İMÑ•ÀÍQ¥Ñ±•ôÑ•áĞõíÍ¥Ñ•½¹™¥œ¹½¹Ñ•¹Ğ¹¡½İMÑ•ÀÍ•ÍÉ¥ÁÑ¥½¹ô€¼ø(€€€€€€€€ğ½‘¥Øø(€€€€€€ğ½Í•Ñ¥½¸ø((€€€€€€ñÍ•Ñ¥½¸±…ÍÍ9…µ”ô‰¡¥ÍÑ½ÉäµÍ•Ñ¥½¸ˆ¥ô‰¡¥ÍÑ½É¥¼ˆø(€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰¡¥ÍÑ½Éäµ½ÁäˆøñÍÁ…¸±…ÍÍ9…µ”ô‰Í•Ñ¥½¸µ­¥­•ÈˆùíÍ¥Ñ•½¹™¥œ¹½¹Ñ•¹Ğ¹¡¥ÍÑ½Éå-¥­•Éôğ½ÍÁ…¸øñ ÈùíÍ¥Ñ•½¹™¥œ¹½¹Ñ•¹Ğ¹¡¥ÍÑ½ÉåQ¥Ñ±•ôğ½ ÈøñÀùíÍ¥Ñ•½¹™¥œ¹½¹Ñ•¹Ğ¹¡¥ÍÑ½Éå•ÍÉ¥ÁÑ¥½¹ôğ½Àø(€€€€€€€€€ì…ÕÍ•È€˜˜€ñ„±…ÍÍ9…µ”ô‰ÁÉ¥µ…Éäµ‰ÕÑÑ½¸‘…É¬ˆ¡É•˜õíÍ¥¹%¹A…Ñ¡ôù¹ÑÉ…È”Í…±Ù…È…»…±¥Í•Ì€ñÍÁ…¸ûŠHğ½ÍÁ…¸øğ½„ùô(€€€€€€€€ğ½‘¥Øø(€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰¡¥ÍÑ½ÉäµÁ…¹•°ˆø(€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰¡¥ÍÑ½ÉäµÁ…¹•°µ¡•…‘•Èˆøñ‘¥Øøñ Ìù»…±¥Í•ÌÉ••¹Ñ•Ìğ½ ÌøñÀùíÕÍ•È€üÕÍ•È¹•µ…¥°€è€‰!¥ÍÓÍÉ¥¼ÁÉ¥Ù…‘¼‘„ÍÕ„½¹Ñ„‰ôğ½Àøğ½‘¥ØøñÍÁ…¸±…ÍÍ9…µ”ô‰¡¥ÍÑ½Éäµ½Õ¹Ğˆùí¡¥ÍÑ½Éä¹±•¹Ñ¡ôğ½ÍÁ…¸øğ½‘¥Øø(€€€€€€€€€í¡¥ÍÑ½Éå1½…‘¥¹œ€ü€ñ‘¥Ø±…ÍÍ9…µ”ô‰¡¥ÍÑ½Éäµ±½…‘¥¹œˆøñÍÁ…¸€¼øñÍÁ…¸€¼øñÍÁ…¸€¼øğ½‘¥Øø€è¡¥ÍÑ½Éä¹±•¹Ñ €ü€ (€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰¡¥ÍÑ½Éäµ±¥ÍĞˆø(€€€€€€€€€€€€€í¡¥ÍÑ½Éä¹Í±¥” À°€Ô¤¹µ…À ¡¥Ñ•´¤€ôø€ (€€€€€€€€€€€€€€€€ñ‰ÕÑÑ½¸­•äõí¥Ñ•´¹¥‘ôÑåÁ”ô‰‰ÕÑÑ½¸ˆ±…ÍÍ9…µ”ô‰¡¥ÍÑ½Éäµ¥Ñ•´ˆ½¹±¥¬õì ¤€ôø½Á•¹!¥ÍÑ½Éå%Ñ•´¡¥Ñ•´¥ô‘¥Í…‰±•õì…¥Ñ•´¹É•ÍÕ±Ñôø(€€€€€€€€€€€€€€€€€€ñÍÁ…¸±…ÍÍ9…µ”õí¡¥ÍÑ½ÉäµÍ½É”€‘íÍ½É•±…ÍÌ¡¥Ñ•´¹Í½É”¥õôùí¥Ñ•´¹Í½É•ôğ½ÍÁ…¸ø(€€€€€€€€€€€€€€€€€€ñÍÁ…¸±…ÍÍ9…µ”ô‰¡¥ÍÑ½Éäµ¥¹™¼ˆøñÍÑÉ½¹œùí¥Ñ•´¹É½±•1…‰•±ôğ½ÍÑÉ½¹œøñÍµ…±°ùí¥Ñ•´¹½µÁ…¹åôƒŠˆí™½Éµ…Ñ…Ñ”¡¥Ñ•´¹É•…Ñ•‘Ğ¥ôğ½Íµ…±°øğ½ÍÁ…¸ø(€€€€€€€€€€€€€€€€€€ñÍÁ…¸±…ÍÍ9…µ”ô‰¡¥ÍÑ½Éäµ…ÉÉ½ÜˆûŠHğ½ÍÁ…¸ø(€€€€€€€€€€€€€€€€ğ½‰ÕÑÑ½¸ø(€€€€€€€€€€€€€€¤¥ô(€€€€€€€€€€€€ğ½‘¥Øø(€€€€€€€€€€¤€è€ (€€€€€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰¡¥ÍÑ½Éäµ•µÁÑäˆøñÍÁ…¸ûŠ2ğ½ÍÁ…¸øñÍÑÉ½¹œùíÕÍ•È€ü€‰M•ÔÁÉ¥µ•¥É¼É•ÍÕ±Ñ…‘¼…Á…É••Ë„…ÅÕ¤ˆ€è€‰¹ÑÉ”Á…É„…Ñ¥Ù…ÈÍ•Ô¡¥ÍÓÍÉ¥¼‰ôğ½ÍÑÉ½¹œøñÀù¹…±¥Í”Õµ„Ù…„”Ù½±Ñ”ÅÕ…¹‘¼ÅÕ¥Í•È¸ğ½Àøğ½‘¥Øø(€€€€€€€€€€¥ô(€€€€€€€€ğ½‘¥Øø(€€€€€€ğ½Í•Ñ¥½¸ø((€€€€€€ñÍ•Ñ¥½¸±…ÍÍ9…µ”ô‰Í•ÕÉ¥ÑäµÍ•Ñ¥½¸ˆ¥ô‰Í•ÕÉ…¹„ˆø(€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰Í•ÕÉ¥Ñäµ‰…‘”ˆ…É¥„µ¡¥‘‘•¸ô‰ÑÉÕ”ˆøñÍÁ…¸ûŠ2øğ½ÍÁ…¸øğ½‘¥Øø(€€€€€€€€ñ‘¥ØøñÍÁ…¸±…ÍÍ9…µ”ô‰Í•Ñ¥½¸µ­¥­•È±¥¡ĞˆùíÍ¥Ñ•½¹™¥œ¹½¹Ñ•¹Ğ¹Í•ÕÉ¥Ñå-¥­•Éôğ½ÍÁ…¸øñ ÈùíÍ¥Ñ•½¹™¥œ¹½¹Ñ•¹Ğ¹Í•ÕÉ¥ÑåQ¥Ñ±•ôğ½ ÈøñÀùíÍ¥Ñ•½¹™¥œ¹½¹Ñ•¹Ğ¹Í•ÕÉ¥Ñå•ÍÉ¥ÁÑ¥½¹ôğ½Àøğ½‘¥Øø(€€€€€€€€ñ‘¥Ø±…ÍÍ9…µ”ô‰Í•ÕÉ¥ÑäµÁ½¥¹ÑÌˆøñÍÁ…¸ûŠrLíÍ¥Ñ•½¹™¥œ¹½¹Ñ•¹Ğ¹Í•ÕÉ¥ÑåA½¥¹ĞÅôğ½ÍÁ…¸øñÍÁ…¸ûŠrLíÍ¥Ñ•½¹™¥œ¹½¹Ñ•¹Ğ¹Í•ÕÉ¥ÑåA½¥¹ĞÉôğ½ÍÁ…¸øñÍÁ…¸ûŠrLíÍ¥Ñ•½¹™¥œ¹½¹Ñ•¹Ğ¹Í•ÕÉ¥ÑåA½¥¹ĞÍôğ½ÍÁ…¸øğ½‘¥Øø(€€€€€€ğ½Í•Ñ¥½¸ø((€€€€€€ñÍ•Ñ¥½¸±…ÍÍ9…µ”ô‰™¥¹…°µÑ„ˆø(€€€€€€€€ñÍÁ…¸±…ÍÍ9…µ”ô‰Í•Ñ¥½¸µ­¥­•ÈˆùíÍ¥Ñ•½¹™¥œ¹½¹Ñ•¹Ğ¹™¥¹…±-¥­•Éôğ½ÍÁ…¸ø(€€€€€€€€ñ ÈùíÍ¥Ñ•½¹™¥œ¹½¹Ñ•¹Ğ¹™¥¹…±Q¥Ñ±•ôğ½ Èø(€€€€€€€€ñÀùíÍ¥Ñ•½¹™¥œ¹½¹Ñ•¹Ğ¹™¥¹…±•ÍÉ¥ÁÑ¥½¹ôğ½Àø(€€€€€€€€ñ„±…ÍÍ9…µ”ô‰ÁÉ¥µ…Éäµ‰ÕÑÑ½¸ˆ¡É•˜ôˆ…¹…±¥Í…ÈˆùíÍ¥Ñ•½¹™¥œ¹½¹Ñ•¹Ğ¹™¥¹…±Ñ…1…‰•±ô€ñÍÁ…¸ûŠHğ½ÍÁ…¸øğ½„ø(€€€€€€ğ½Í•Ñ¥½¸ø((€€€€€€ñ™½½Ñ•Èø(€€€€€€€€ñ„±…ÍÍ9…µ”ô‰‰É…¹™½½Ñ•Èµ‰É…¹ˆ¡É•˜ôˆÑ½ÀˆøñÍÁ…¸±…ÍÍ9…µ”ô‰‰É…¹µµ…É¬ˆù8ğ½ÍÁ…¸øñÍÁ…¸ù9•á½Xğ½ÍÁ…¸øğ½„ø(€€€€€€€€ñÀùíÍ¥Ñ•½¹™¥œ¹½¹Ñ•¹Ğ¹™½½Ñ•ÉQ…±¥¹•ôğ½Àø(€€€€€€€€ñ¹…Ø…É¥„µ±…‰•°ô‰1¥¹­Ì‘¼É½‘…Ã¤ˆøñ„¡É•˜ôˆ½µ¼µ™Õ¹¥½¹„ˆù½µ¼™Õ¹¥½¹„ğ½„øñ„¡É•˜ôˆÍ•ÕÉ…¹„ˆùAÉ¥Ù…¥‘…‘”ğ½„øñ„¡É•˜ôˆ…¹…±¥Í…Èˆù9½Ù„…»…±¥Í”ğ½„øğ½¹…Øø(€€€€€€€€ñÍµ…±°ø(€€€€€€€€€ƒ
-¤í¹•Ü…Ñ” ¤¹•ÑÕ±±e•…È ¥ô9•á½X¸»…±¥Í”½É¥•¹Ñ…Ñ¥Ù„¸(€€€€€€€€€í¥Í‘µ¥¸€˜˜€ñÍÁ…¸±…ÍÍ9…µ”ô‰…‘µ¥¸µÍ•É•Ğµ½‘”ˆ…É¥„µ±…‰•°ô‰Í‘¥¼…‘µ¥¹¥ÍÑÉ…Ñ¥Ù¼ˆøñ‰ÕÑÑ½¸ÑåÁ”ô‰‰ÕÑÑ½¸ˆ½¹±¥¬õì ¤€ôø¡…¹‘±•‘µ¥¹M•ÅÕ•¹” ˆÀˆ¥ôøÀğ½‰ÕÑÑ½¸øñ¤û
-Üğ½¤øñ‰ÕÑÑ½¸ÑåÁ”ô‰‰ÕÑÑ½¸ˆ½¹±¥¬õì ¤€ôø¡…¹‘±•‘µ¥¹M•ÅÕ•¹” ˆÈˆ¥ôøÈğ½‰ÕÑÑ½¸øğ½ÍÁ…¸ùô(€€€€€€€€ğ½Íµ…±°ø(€€€€€€ğ½™½½Ñ•Èø((€€€€€í¥Í‘µ¥¸€˜˜…‘µ¥¹1…Õ¹¡•ÉY¥Í¥‰±”€˜˜€ (€€€€€€€€ñ‰ÕÑÑ½¸ÑåÁ”ô‰‰ÕÑÑ½¸ˆ±…ÍÍ9…µ”ô‰…‘µ¥¸µ±…Õ¹¡•Èˆ½¹±¥¬õì ¤€ôøÍ•Ñ‘µ¥¹=Á•¸¡ÑÉÕ”¥ô…É¥„µ¡…ÍÁ½ÁÕÀô‰‘¥…±½œˆø(€€€€€€€€€€ñÍÁ…¸…É¥„µ¡¥‘‘•¸ô‰ÑÉÕ”ˆûŠr˜ğ½ÍÁ…¸ø‘µ¥¹¥ÍÑÉ…È(€€€€€€€€ğ½‰ÕÑÑ½¸ø(€€€€€€¥ô(€€€€€í¥Í‘µ¥¸€˜˜…‘µ¥¹=Á•¸€˜˜ÕÍ•È€˜˜€ (€€€€€€€€ñ‘µ¥¹A…¹•°(€€€€€€€€€…‘µ¥¹µ…¥°õíÕÍ•È¹•µ…¥±ô(€€€€€€€€€½¹™¥œõíÍ¥Ñ•½¹™¥ô(€€€€€€€€€É•Ù¥Í¥½¸õíÕÉÉ•¹Ñ½¹™¥I•Ù¥Í¥½¹ô(€€€€€€€€€½¹±½Í”õì ¤€ôøÍ•Ñ‘µ¥¹=Á•¸¡™…±Í”¥ô(€€€€€€€€€½¹M…Ù•õì¡¹•áÑ½¹™¥œ°¹•áÑI•Ù¥Í¥½¸¤€ôøì(€€€€€€€€€€€½¹ÍĞÍ•±•Ñ•‘I½±”€ô™¥¹‘½¹™¥ÕÉ•‘=ÕÁ…Ñ¥½¸¡Í¥Ñ•½¹™¥œ°É½±•Q¥Ñ±”¤ì(€€€€€€€€€€€Í•ÑM¥Ñ•½¹™¥œ¡¹•áÑ½¹™¥œ¤ì(€€€€€€€€€€€Í•ÑÕÉÉ•¹Ñ½¹™¥I•Ù¥Í¥½¸¡¹•áÑI•Ù¥Í¥½¸¤ì(€€€€€€€€€€€Í•Ñ½µÁ…¹åM•Ñ½É% ¡ÕÉÉ•¹Ğ¤€ôø¹•áÑ½¹™¥œ¹Í•Ñ½ÉÌ¹Í½µ” ¡Í•Ñ½È¤€ôøÍ•Ñ½È¹¥€ôôôÕÉÉ•¹Ğ¤€üÕÉÉ•¹Ğ€è€ˆˆ¤ì(€€€€€€€€€€€Í•Ñ½µÁ…¹åAÉ¥½É¥Ñå%‘Ì ¡ÕÉÉ•¹Ğ¤€ôøÕÉÉ•¹Ğ¹™¥±Ñ•È ¡¥¤€ôø¹•áÑ½¹™¥œ¹ÁÉ¥½É¥Ñ¥•Ì¹Í½µ” ¡ÁÉ¥½É¥Ñä¤€ôøÁÉ¥½É¥Ñä¹¥€ôôô¥¤¤¤ì(€€€€€€€€€€€¥˜€¡Í•±•Ñ•‘I½±”¤ì(€€€€€€€€€€€€€Í•ÑI½±•Q¥Ñ±”¡¹•áÑ½¹™¥œ¹½ÕÁ…Ñ¥½¹Ì¹™¥¹ ¡½ÕÁ…Ñ¥½¸¤€ôø½ÕÁ…Ñ¥½¸¹¥€ôôôÍ•±•Ñ•‘I½±”¹¥¤ü¹Ñ¥Ñ±”€üü‘•™…Õ±ÑI½±•Q¥Ñ±”¡¹•áÑ½¹™¥œ¤¤ì(€€€€€€€€€€€ô(€€€€€€€€€õô(€€€€€€€€¼ø(€€€€€€¥ô(€€€€ğ½µ…¥¸ø(€€¤ì)ô()™Õ¹Ñ¥½¸AÉ•Ù¥•İ	…È¡ì±…‰•°°Ù…±Õ”ôèì±…‰•°èÍÑÉ¥¹œìÙ…±Õ”è¹Õµ‰•Èô¤ì(€É•ÑÕÉ¸€ñ‘¥ØøñÍÁ…¸ùí±…‰•±ôñˆùíÙ…±Õ•ô”ğ½ˆøğ½ÍÁ…¸øñ¤øñ•´ÍÑå±”õíìİ¥‘Ñ è€‘íÙ…±Õ•ô•€õô€¼øğ½¤øğ½‘¥Øøì)ô()™Õ¹Ñ¥½¸‘•™…Õ±ÑI½±•Q¥Ñ±”¡½¹™¥œèM¥Ñ•½¹™¥œ¤èÍÑÉ¥¹œì(€É•ÑÕÉ¸½¹™¥œ¹½ÕÁ…Ñ¥½¹Ì¹™¥¹ ¡½ÕÁ…Ñ¥½¸¤€ôø½ÕÁ…Ñ¥½¸¹¥€ôôô€‰…¹…±¥ÍÑ„µ‘”µ‘…‘½Ìˆñğ½ÕÁ…Ñ¥½¸¹Ñ¥Ñ±”€ôôô€‰¹…±¥ÍÑ„‘”…‘½Ìˆ¤ü¹Ñ¥Ñ±”(€€€€üü½¹™¥œ¹½ÕÁ…Ñ¥½¹ÍlÁtü¹Ñ¥Ñ±”(€€€€üü€ˆˆì)ô()™Õ¹Ñ¥½¸É¥Ñ•É¥½¸¡ì¥½¸°Ñ¥Ñ±”°İ•¥¡Ğ°Ñ•áĞôèì¥½¸èÍÑÉ¥¹œìÑ¥Ñ±”èÍÑÉ¥¹œìİ•¥¡ĞèÍÑÉ¥¹œìÑ•áĞèÍÑÉ¥¹œô¤ì(€É•ÑÕÉ¸€ñ‘¥Ø±…ÍÍ9…µ”ô‰É¥Ñ•É¥½¸ˆøñÍÁ…¸±…ÍÍ9…µ”ô‰É¥Ñ•É¥½¸µ¥½¸ˆùí¥½¹ôğ½ÍÁ…¸øñÀøñÍÑÉ½¹œùíÑ¥Ñ±•ôğ½ÍÑÉ½¹œøñÍµ…±°ùíÑ•áÑôğ½Íµ…±°øğ½Àøñˆùíİ•¥¡Ñôğ½ˆøğ½‘¥Øøì)ô()™Õ¹Ñ¥½¸!½İ…É¡ì¹Õµ‰•È°Íåµ‰½°°Ñ¥Ñ±”°Ñ•áĞôèì¹Õµ‰•ÈèÍÑÉ¥¹œìÍåµ‰½°èÍÑÉ¥¹œìÑ¥Ñ±”èÍÑÉ¥¹œìÑ•áĞèÍÑÉ¥¹œô¤ì(€É•ÑÕÉ¸€ñ…ÉÑ¥±”±…ÍÍ9…µ”ô‰¡½Üµ…ÉˆøñÍÁ…¸±…ÍÍ9…µ”ô‰¡½Üµ¹Õµ‰•Èˆùí¹Õµ‰•Éôğ½ÍÁ…¸øñÍÁ…¸±…ÍÍ9…µ”ô‰¡½ÜµÍåµ‰½°ˆùíÍåµ‰½±ôğ½ÍÁ…¸øñ ÌùíÑ¥Ñ±•ôğ½ ÌøñÀùíÑ•áÑôğ½Àøğ½…ÉÑ¥±”øì)ô()…Íå¹Œ™Õ¹Ñ¥½¸•áÑÉ…ÑI•ÍÕµ•Q•áĞ¡™¥±”è¥±”¤èAÉ½µ¥Í”ñÍÑÉ¥¹œøì(€½¹ÍĞ•áÑ•¹Í¥½¸€ô™¥±”¹¹…µ”¹ÍÁ±¥Ğ ˆ¸ˆ¤¹Á½À ¤ü¹Ñ½1½İ•É…Í” ¤ì(€¥˜€¡•áÑ•¹Í¥½¸€ôôô€‰ÑáĞˆñğ•áÑ•¹Í¥½¸€ôôô€‰µˆñğ™¥±”¹ÑåÁ”¹ÍÑ…ÉÑÍ]¥Ñ  ‰Ñ•áĞ¼ˆ¤¤É•ÑÕÉ¸™¥±”¹Ñ•áĞ ¤ì(€¥˜€¡•áÑ•¹Í¥½¸€ôôô€‰‘½àˆ¤ì(€€€½¹ÍĞµ…µµ½Ñ €ô…İ…¥Ğ¥µÁ½ÉĞ ‰µ…µµ½Ñ ˆ¤ì(€€€½¹ÍĞÉ•ÍÕ±Ğ€ô…İ…¥Ğµ…µµ½Ñ ¹•áÑÉ…ÑI…İQ•áĞ¡ì…ÉÉ…å	Õ™™•Èè…İ…¥Ğ™¥±”¹…ÉÉ…å	Õ™™•È ¤ô¤ì(€€€É•ÑÕÉ¸É•ÍÕ±Ğ¹Ù…±Õ”ì(€ô(€¥˜€¡•áÑ•¹Í¥½¸€ôôô€‰Á‘˜ˆñğ™¥±”¹ÑåÁ”€ôôô€‰…ÁÁ±¥…Ñ¥½¸½Á‘˜ˆ¤ì(€€€½¹ÍĞÁ‘™©Ì€ô…İ…¥Ğ¥µÁ½ÉĞ ‰Á‘™©Ìµ‘¥ÍĞ½±•…ä½‰Õ¥±½Á‘˜¹µ©Ìˆ¤ì(€€€½¹ÍĞİ½É­•È€ô…İ…¥Ğ¥µÁ½ÉĞ ‰Á‘™©Ìµ‘¥ÍĞ½±•…ä½‰Õ¥±½Á‘˜¹İ½É­•È¹µ¥¸¹µ©ÌıÕÉ°ˆ¤ì(€€€Á‘™©Ì¹±½‰…±]½É­•É=ÁÑ¥½¹Ì¹İ½É­•ÉMÉŒ€ôİ½É­•È¹‘•™…Õ±Ğì(€€€½¹ÍĞ‘½Õµ•¹Ğ€ô…İ…¥ĞÁ‘™©Ì¹•Ñ½Õµ•¹Ğ¡ì‘…Ñ„è¹•ÜU¥¹ĞáÉÉ…ä¡…İ…¥Ğ™¥±”¹…ÉÉ…å	Õ™™•È ¤¤ô¤¹ÁÉ½µ¥Í”ì(€€€½¹ÍĞÁ…•ÌèÍÑÉ¥¹mt€ômtì(€€€™½È€¡±•ĞÁ…•9Õµ‰•È€ô€ÄìÁ…•9Õµ‰•È€ğô‘½Õµ•¹Ğ¹¹ÕµA…•ÌìÁ…•9Õµ‰•È€¬ô€Ä¤ì(€€€€€½¹ÍĞÁ…”€ô…İ…¥Ğ‘½Õµ•¹Ğ¹•ÑA…”¡Á…•9Õµ‰•È¤ì(€€€€€½¹ÍĞ½¹Ñ•¹Ğ€ô…İ…¥ĞÁ…”¹•ÑQ•áÑ½¹Ñ•¹Ğ ¤ì(€€€€€Á…•Ì¹ÁÕÍ ¡½¹Ñ•¹Ğ¹¥Ñ•µÌ¹µ…À ¡¥Ñ•´¤€ôø€ ‰ÍÑÈˆ¥¸¥Ñ•´€ü¥Ñ•´¹ÍÑÈ€è€ˆˆ¤¤¹©½¥¸ ˆ€ˆ¤¤ì(€€€ô(€€€É•ÑÕÉ¸Á…•Ì¹©½¥¸ ‰q¸ˆ¤ì(€ô(€Ñ¡É½Ü¹•ÜÉÉ½È ‰½Éµ…Ñ¼»¼É•½¹¡•¥‘¼¸ˆ¤ì)ô()™Õ¹Ñ¥½¸™½Éµ…Ñ	åÑ•Ì¡‰åÑ•Ìè¹Õµ‰•È¤èÍÑÉ¥¹œì(€É•ÑÕÉ¸‰åÑ•Ì€ğ€ÄÀÈĞ€¨€ÄÀÈĞ€ü€‘í5…Ñ ¹µ…à Ä°5…Ñ ¹É½Õ¹¡‰åÑ•Ì€¼€ÄÀÈĞ¤¥ô-	€€è€‘ì¡‰åÑ•Ì€¼€ÄÀÈĞ€¼€ÄÀÈĞ¤¹Ñ½¥á• Ä¥ô5	€ì)ô()™Õ¹Ñ¥½¸™¥ÉÍÑ9…µ”¡Ù…±Õ”èÍÑÉ¥¹œ¤èÍÑÉ¥¹œì(€½¹ÍĞ¹½Éµ…±¥é•€ôÙ…±Õ”¹¥¹±Õ‘•Ì ‰ ˆ¤€üÙ…±Õ”¹ÍÁ±¥Ğ ‰ ˆ¥lÁt€èÙ…±Õ”ì(€É•ÑÕÉ¸¹½Éµ…±¥é•¹ÑÉ¥´ ¤¹ÍÁ±¥Ğ ½qÌ¬¼¥lÁtñğ€‰Y½¨ˆì)ô()™Õ¹Ñ¥½¸™½Éµ…Ñ…Ñ”¡Ù…±Õ”èÍÑÉ¥¹œ¤èÍÑÉ¥¹œì(€½¹ÍĞ¹½Éµ…±¥é•€ôÙ…±Õ”¹¥¹±Õ‘•Ì ‰Pˆ¤€üÙ…±Õ”€è€‘íÙ…±Õ”¹É•Á±…” ˆ€ˆ°€‰Pˆ¥õi€ì(€½¹ÍĞ‘…Ñ”€ô¹•Ü…Ñ”¡¹½Éµ…±¥é•¤ì(€¥˜€¡9Õµ‰•È¹¥Í9…8¡‘…Ñ”¹•ÑQ¥µ” ¤¤¤É•ÑÕÉ¸Ù…±Õ”ì(€É•ÑÕÉ¸¹•Ü%¹Ñ°¹…Ñ•Q¥µ•½Éµ…Ğ ‰ÁĞµ	Hˆ°ì‘…äè€ˆÈµ‘¥¥Ğˆ°µ½¹Ñ è€‰Í¡½ÉĞˆô¤¹™½Éµ…Ğ¡‘…Ñ”¤¹É•Á±…” ˆ¸ˆ°€ˆˆ¤ì)ô()™Õ¹Ñ¥½¸Í½É•±…ÍÌ¡Í½É”è¹Õµ‰•È¤èÍÑÉ¥¹œì(€¥˜€¡Í½É”€øô€àÀ¤É•ÑÕÉ¸€‰¡¥ ˆì(€¥˜€¡Í½É”€øô€ÔÔ¤É•ÑÕÉ¸€‰µ•‘¥Õ´ˆì(€É•ÑÕÉ¸€‰±½Üˆì)ô(
+                  <span>Nome da empresa <b>*</b></span>
+                  <input value={company} onChange={(event) => setCompany(event.target.value)} placeholder="Ex.: Nubank, Ambev, Aurora..." maxLength={120} />
+                </label>
+                <label className="field">
+                  <span>Setor da empresa <b>*</b></span>
+                  <select value={companySectorId} onChange={(event) => setCompanySectorId(event.target.value)}>
+                    <option value="">Selecione o setor</option>
+                    {siteConfig.sectors.map((sector) => <option key={sector.id} value={sector.id}>{sector.label}</option>)}
+                  </select>
+                </label>
+              </div>
+
+              <fieldset className="priority-fieldset">
+                <legend>O que essa empresa mais valoriza? <small>opcional â€¢ escolha atÃ© 4</small></legend>
+                <div className="priority-chips">
+                  {siteConfig.priorities.map((priority) => {
+                    const selected = companyPriorityIds.includes(priority.id);
+                    const disabled = !selected && companyPriorityIds.length >= 4;
+                    return (
+                      <button
+                        type="button"
+                        key={priority.id}
+                        className={selected ? "selected" : ""}
+                        aria-pressed={selected}
+                        disabled={disabled}
+                        onClick={() => setCompanyPriorityIds((current) => selected
+                          ? current.filter((id) => id !== priority.id)
+                          : [...current, priority.id])}
+                      >
+                        <span aria-hidden="true">{selected ? "âœ“" : "+"}</span>{priority.label}
+                      </button>
+                    );
+                  })}
+                </div>
+              </fieldset>
+
+              <label className="field full-field">
+                <span>Sobre a empresa <small>opcional, mas entra na nota</small></span>
+                <textarea value={companyDescription} onChange={(event) => setCompanyDescription(event.target.value)} placeholder="Cole um trecho de â€˜Sobre nÃ³sâ€™, cultura, valores ou contexto do negÃ³cio..." rows={4} maxLength={5000} />
+                <small className="field-counter">{companyDescription.length.toLocaleString("pt-BR")} / 5.000</small>
+              </label>
+
+              <div className="form-divider" />
+              <div className="form-title"><span className="title-number">02</span><div><h3>{siteConfig.content.roleStepTitle}</h3><p>{siteConfig.content.roleStepDescription}</p></div></div>
+              <label className="field full-width-field">
+                <span>ProfissÃ£o / cargo <b>*</b></span>
+                <input
+                  list="nexocv-role-options"
+                  value={roleTitle}
+                  onChange={(event) => setRoleTitle(event.target.value)}
+                  placeholder="Ex.: Enfermeiro, Eletricista, Advogada, Desenvolvedor..."
+                  maxLength={120}
+                  autoComplete="off"
+                />
+                <datalist id="nexocv-role-options">
+                  {siteConfig.occupations.map((occupation) => <option key={occupation.id} value={occupation.title}>{occupation.area}</option>)}
+                </datalist>
+                <small className="field-help">{siteConfig.occupations.length} sugestÃµes disponÃ­veis â€” e cargos fora da lista tambÃ©m funcionam com a descriÃ§Ã£o da vaga.</small>
+              </label>
+              <label className="field full-field">
+                <span>DescriÃ§Ã£o da vaga <small>opcional, mas melhora a precisÃ£o</small></span>
+                <textarea value={jobDescription} onChange={(event) => setJobDescription(event.target.value)} placeholder="Cole aqui os requisitos e responsabilidades do anÃºncio..." rows={5} maxLength={8000} />
+                <small className="field-counter">{jobDescription.length.toLocaleString("pt-BR")} / 8.000</small>
+              </label>
+
+              <div className="form-divider" />
+              <div className="form-title"><span className="title-number">03</span><div><h3>{siteConfig.content.resumeStepTitle}</h3><p>{siteConfig.content.resumeStepDescription}</p></div></div>
+
+              <label
+                className={`dropzone ${isDragging ? "dragging" : ""} ${resumeFile ? "has-file" : ""}`}
+                onDragEnter={(event) => { event.preventDefault(); setIsDragging(true); }}
+                onDragOver={(event) => event.preventDefault()}
+                onDragLeave={(event) => { event.preventDefault(); setIsDragging(false); }}
+                onDrop={(event: DragEvent<HTMLLabelElement>) => {
+                  event.preventDefault();
+                  setIsDragging(false);
+                  const file = event.dataTransfer.files[0];
+                  if (file) void selectFile(file);
+                }}
+              >
+                <input
+                  ref={fileInputRef}
+                  type="file"
+                  accept=".pdf,.docx,.txt,.md,application/pdf,application/vnd.openxmlformats-officedocument.wordprocessingml.document,text/plain"
+                  onChange={(event) => {
+                    const file = event.target.files?.[0];
+                    if (file) void selectFile(file);
+                  }}
+                />
+                {isReading ? (
+                  <><span className="upload-spinner" /><strong>Lendo seu currÃ­culo...</strong><small>Isso leva sÃ³ alguns segundos</small></>
+                ) : resumeFile ? (
+                  <><span className="file-success">âœ“</span><strong>{resumeFile.name}</strong><small>{formatBytes(resumeFile.size)} â€¢ pronto para analisar</small><button type="button" className="replace-file" onClick={(event) => { event.preventDefault(); fileInputRef.current?.click(); }}>Trocar arquivo</button></>
+                ) : (
+                  <><span className="upload-icon" aria-hidden="true">â†‘</span><strong>Arraste o currÃ­culo aqui</strong><small>ou clique para selecionar â€¢ PDF, DOCX ou TXT â€¢ atÃ© 10 MB</small></>
+                )}
+              </label>
+
+              <button type="button" className="paste-toggle" onClick={() => setManualOpen((current) => !current)} aria-expanded={manualOpen}>
+                <span aria-hidden="true">â–¤</span> Prefere colar o texto do currÃ­culo? <b>{manualOpen ? "âˆ’" : "+"}</b>
+              </button>
+              {manualOpen && (
+                <label className="field full-field paste-field">
+                  <span>ConteÃºdo do currÃ­culo</span>
+                  <textarea value={resumeText} onChange={(event) => { setResumeText(event.target.value); if (resumeFile) setResumeFile(null); }} placeholder="Cole aqui as experiÃªncias, formaÃ§Ã£o e competÃªncias..." rows={8} maxLength={30000} />
+                  <small className="field-counter">{resumeText.length.toLocaleString("pt-BR")} / 30.000</small>
+                </label>
+              )}
+
+              {formError && <div className="form-error" role="alert"><span>!</span>{formError}</div>}
+
+              <button className="analyze-button" type="button" onClick={() => void handleAnalyze()} disabled={isAnalyzing || isReading}>
+                {isAnalyzing ? <><span className="button-spinner" /> Comparando currÃ­culo, vaga e empresa...</> : <>{siteConfig.content.analyzeButtonLabel} <span aria-hidden="true">â†’</span></>}
+              </button>
+              <p className="form-privacy"><span aria-hidden="true">âŒ¾</span> {siteConfig.content.analysisPrivacyNote}</p>
+            </div>
+
+            <aside className="criteria-panel">
+              <span className="criteria-label">{siteConfig.content.criteriaKicker}</span>
+              <h3>{siteConfig.content.criteriaTitle}</h3>
+              <p>{siteConfig.content.criteriaDescription}</p>
+              <div className="criteria-list">
+                <Criterion icon="âŒ˜" title="CompetÃªncias tÃ©cnicas" weight={`${siteConfig.weights.skills}%`} text="Ferramentas, mÃ©todos e conhecimentos essenciais." />
+                <Criterion icon="â†—" title="ExperiÃªncia" weight={`${siteConfig.weights.experience}%`} text="Tempo e contexto profissional demonstrados." />
+                <Criterion icon="â—" title="AderÃªncia Ã  vaga" weight={`${siteConfig.weights.vacancy}%`} text="Termos e responsabilidades do anÃºncio." />
+                <Criterion icon="â—«" title="Contexto da empresa" weight={`${siteConfig.weights.company}%`} text="Setor, prioridades e contexto profissional informado." />
+                <Criterion icon="â—‡" title="Comportamental" weight={`${siteConfig.weights.softSkills}%`} text="Sinais de colaboraÃ§Ã£o, comunicaÃ§Ã£o e organizaÃ§Ã£o." />
+                <Criterion icon="â–¡" title="FormaÃ§Ã£o" weight={`${siteConfig.weights.education}%`} text="FormaÃ§Ã£o acadÃªmica e tÃ©cnica identificada." />
+              </div>
+              <div className="criteria-tip"><span>âœ¦</span><p><strong>{siteConfig.content.criteriaTipTitle}</strong>{siteConfig.content.criteriaTipDescription}</p></div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      {result && (
+        <section className="results-section" ref={resultRef} aria-live="polite">
+          <div className="result-header">
+            <div><span className="section-kicker">Seu diagnÃ³stico</span><h2>{resultContext.roleLabel}</h2><p>{resultContext.company}{resultContext.sectorLabel ? ` â€¢ ${resultContext.sectorLabel}` : ""}</p></div>
+            <button type="button" className="ghost-button" onClick={resetAnalysis}>Nova anÃ¡lise</button>
+          </div>
+
+          <div className="result-overview">
+            <div className="result-score-card">
+              <div className="score-ring result-ring" style={{ "--score": `${result.score * 3.6}deg` } as CSSProperties}><span><b>{result.score}</b><small>/100</small></span></div>
+              <div className="result-score-copy"><span className="result-level">{result.level}</span><h3>{result.score >= 70 ? "Seu currÃ­culo estÃ¡ no caminho certo." : "HÃ¡ espaÃ§o claro para ganhar aderÃªncia."}</h3><p>{result.summary}</p></div>
+            </div>
+            <div className="result-actions">
+              <button type="button" className="whatsapp-button" onClick={shareOnWhatsApp}><span aria-hidden="true">â—‰</span> Compartilhar no WhatsApp</button>
+              {saveNotice && <p>{saveNotice}</p>}
+            </div>
+          </div>
+
+          <div className="result-grid">
+            <article className="result-card dimensions-card">
+              <div className="card-heading"><span className="card-icon indigo">â‰¡</span><div><h3>ComposiÃ§Ã£o da nota</h3><p>Veja onde o currÃ­culo ganha ou perde pontos.</p></div></div>
+              <div className="dimension-list">
+                {result.dimensions.map((dimension) => (
+                  <div className="dimension" key={dimension.id}>
+                    <div className="dimension-top"><span>{dimension.label}{typeof dimension.weight === "number" && <small>{dimension.weight}% da nota nesta anÃ¡lise</small>}</span><b>{dimension.score}%</b></div>
+                    <div className="progress-track"><span style={{ width: `${dimension.score}%` }} /></div>
+                    <small>{dimension.detail}</small>
+                  </div>
+                ))}
+              </div>
+            </article>
+
+            <article className="result-card company-match-card">
+              <div className="card-heading"><span className="card-icon company">â—«</span><div><h3>ConexÃ£o com a empresa</h3><p>Setor e prioridades profissionais, sem adivinhar cultura.</p></div></div>
+              {result.companyMatch ? (
+                <>
+                  <div className="company-score-line">
+                    <div><strong>{result.companyMatch.score}%</strong><span>de aderÃªncia ao contexto informado</span></div>
+                    <span className="company-sector-pill">{result.companyMatch.sectorLabel}</span>
+                  </div>
+                  <p className="company-match-detail">{result.companyMatch.detail}</p>
+                  <div className="company-signal-block">
+                    <h4>EvidÃªncias encontradas</h4>
+                    <div className="tag-cloud positive compact">
+                      {result.companyMatch.matchedSignals.length
+                        ? result.companyMatch.matchedSignals.map((item) => <span key={item}>âœ“ {item}</span>)
+                        : <p className="empty-copy">O currÃ­culo ainda nÃ£o deixa evidente experiÃªncia ligada a esse contexto.</p>}
+                    </div>
+                  </div>
+                  {!!result.companyMatch.missingSignals.length && (
+                    <div className="company-signal-block missing">
+                      <h4>Sinais que podem ficar mais claros</h4>
+                      <div className="tag-cloud warning compact">{result.companyMatch.missingSignals.slice(0, 6).map((item) => <span key={item}>+ {item}</span>)}</div>
+                    </div>
+                  )}
+                </>
+              ) : (
+                <p className="empty-copy legacy-company-copy">Esta anÃ¡lise foi criada antes de o contexto da empresa entrar na nota. FaÃ§a uma nova anÃ¡lise para ver essa dimensÃ£o.</p>
+              )}
+            </article>
+
+            <article className="result-card skills-card">
+              <div className="card-heading"><span className="card-icon green">âœ“</span><div><h3>CompetÃªncias encontradas</h3><p>O que jÃ¡ aparece a seu favor.</p></div></div>
+              <div className="tag-cloud positive">
+                {result.matchedSkills.length ? result.matchedSkills.map((item) => <span key={item}>âœ“ {item}</span>) : <p className="empty-copy">As competÃªncias podem estar no currÃ­culo, mas nÃ£o apareceram com os termos esperados.</p>}
+              </div>
+              <div className="card-subsection"><h4>Lacunas mais relevantes</h4><div className="tag-cloud warning">{result.missingSkills.slice(0, 6).map((item) => <span key={item}>+ {item}</span>)}</div></div>
+            </article>
+
+            <article className="result-card strengths-card">
+              <div className="card-heading"><span className="card-icon blue">â†—</span><div><h3>Leitura do currÃ­culo</h3><p>Pontos fortes e sinais que faltaram.</p></div></div>
+              <div className="insight-columns">
+                <div><h4><span className="positive-dot" /> Pontos fortes</h4><ul>{result.strengths.map((item) => <li key={item}>{item}</li>)}</ul></div>
+                <div><h4><span className="warning-dot" /> O que merece atenÃ§Ã£o</h4><ul>{result.gaps.map((item) => <li key={item}>{item}</li>)}</ul></div>
+              </div>
+            </article>
+
+            <article className="result-card recommendations-card">
+              <div className="card-heading"><span className="card-icon amber">âœ¦</span><div><h3>PrÃ³ximos ajustes</h3><p>AÃ§Ãµes prÃ¡ticas antes de se candidatar.</p></div></div>
+              <ol className="recommendation-list">{result.recommendations.map((item, index) => <li key={item}><span>{index + 1}</span><p>{item}</p></li>)}</ol>
+            </article>
+          </div>
+          <p className="result-disclaimer">A nota mostra aderÃªncia textual e evidÃªncias profissionais. Ela nÃ£o prevÃª contrataÃ§Ã£o, desempenho ou potencial e nunca deve ser usada como decisÃ£o automÃ¡tica.</p>
+        </section>
+      )}
+
+      <section className="how-section" id="como-funciona">
+        <div className="section-heading"><span className="section-kicker">{siteConfig.content.howKicker}</span><h2>{siteConfig.content.howTitle}</h2><p>{siteConfig.content.howDescription}</p></div>
+        <div className="how-grid">
+          <HowCard number="01" symbol="â†¥" title={siteConfig.content.howStep1Title} text={siteConfig.content.howStep1Description} />
+          <HowCard number="02" symbol="âŒ•" title={siteConfig.content.howStep2Title} text={siteConfig.content.howStep2Description} />
+          <HowCard number="03" symbol="â†—" title={siteConfig.content.howStep3Title} text={siteConfig.content.howStep3Description} />
+        </div>
+      </section>
+
+      <section className="history-section" id="historico">
+        <div className="history-copy"><span className="section-kicker">{siteConfig.content.historyKicker}</span><h2>{siteConfig.content.historyTitle}</h2><p>{siteConfig.content.historyDescription}</p>
+          {!user && <a className="primary-button dark" href={signInPath}>Entrar e salvar anÃ¡lises <span>â†’</span></a>}
+        </div>
+        <div className="history-panel">
+          <div className="history-panel-header"><div><h3>AnÃ¡lises recentes</h3><p>{user ? user.email : "HistÃ³rico privado da sua conta"}</p></div><span className="history-count">{history.length}</span></div>
+          {historyLoading ? <div className="history-loading"><span /><span /><span /></div> : history.length ? (
+            <div className="history-list">
+              {history.slice(0, 5).map((item) => (
+                <button key={item.id} type="button" className="history-item" onClick={() => openHistoryItem(item)} disabled={!item.result}>
+                  <span className={`history-score ${scoreClass(item.score)}`}>{item.score}</span>
+                  <span className="history-info"><strong>{item.roleLabel}</strong><small>{item.company} â€¢ {formatDate(item.createdAt)}</small></span>
+                  <span className="history-arrow">â†’</span>
+                </button>
+              ))}
+            </div>
+          ) : (
+            <div className="history-empty"><span>âŒ</span><strong>{user ? "Seu primeiro resultado aparecerÃ¡ aqui" : "Entre para ativar seu histÃ³rico"}</strong><p>Analise uma vaga e volte quando quiser.</p></div>
+          )}
+        </div>
+      </section>
+
+      <section className="security-section" id="seguranca">
+        <div className="security-badge" aria-hidden="true"><span>âŒ¾</span></div>
+        <div><span className="section-kicker light">{siteConfig.content.securityKicker}</span><h2>{siteConfig.content.securityTitle}</h2><p>{siteConfig.content.securityDescription}</p></div>
+        <div className="security-points"><span>âœ“ {siteConfig.content.securityPoint1}</span><span>âœ“ {siteConfig.content.securityPoint2}</span><span>âœ“ {siteConfig.content.securityPoint3}</span></div>
+      </section>
+
+      <section className="final-cta">
+        <span className="section-kicker">{siteConfig.content.finalKicker}</span>
+        <h2>{siteConfig.content.finalTitle}</h2>
+        <p>{siteConfig.content.finalDescription}</p>
+        <a className="primary-button" href="#analisar">{siteConfig.content.finalCtaLabel} <span>â†’</span></a>
+      </section>
+
+      <footer>
+        <a className="brand footer-brand" href="#top"><span className="brand-mark">N</span><span>NexoCV</span></a>
+        <p>{siteConfig.content.footerTagline}</p>
+        <nav aria-label="Links do rodapÃ©"><a href="#como-funciona">Como funciona</a><a href="#seguranca">Privacidade</a><a href="#analisar">Nova anÃ¡lise</a></nav>
+        <small>
+          Â© {new Date().getFullYear()} NexoCV. AnÃ¡lise orientativa.
+          {isAdmin && <span className="admin-secret-code" aria-label="CÃ³digo administrativo"><button type="button" onClick={() => handleAdminSequence("0")}>0</button><i>Â·</i><button type="button" onClick={() => handleAdminSequence("2")}>2</button></span>}
+        </small>
+      </footer>
+
+      {isAdmin && adminLauncherVisible && (
+        <button type="button" className="admin-launcher" onClick={() => setAdminOpen(true)} aria-haspopup="dialog">
+          <span aria-hidden="true">âœ¦</span> Administrar
+        </button>
+      )}
+      {isAdmin && adminOpen && user && (
+        <AdminPanel
+          adminEmail={user.email}
+          config={siteConfig}
+          revision={currentConfigRevision}
+          onClose={() => setAdminOpen(false)}
+          onSaved={(nextConfig, nextRevision) => {
+            const selectedRole = findConfiguredOccupation(siteConfig, roleTitle);
+            setSiteConfig(nextConfig);
+            setCurrentConfigRevision(nextRevision);
+            setCompanySectorId((current) => nextConfig.sectors.some((sector) => sector.id === current) ? current : "");
+            setCompanyPriorityIds((current) => current.filter((id) => nextConfig.priorities.some((priority) => priority.id === id)));
+            if (selectedRole) {
+              setRoleTitle(nextConfig.occupations.find((occupation) => occupation.id === selectedRole.id)?.title ?? defaultRoleTitle(nextConfig));
+            }
+          }}
+        />
+      )}
+    </main>
+  );
+}
+
+function PreviewBar({ label, value }: { label: string; value: number }) {
+  return <div><span>{label}<b>{value}%</b></span><i><em style={{ width: `${value}%` }} /></i></div>;
+}
+
+function defaultRoleTitle(config: SiteConfig): string {
+  return config.occupations.find((occupation) => occupation.id === "analista-de-dados" || occupation.title === "Analista de Dados")?.title
+    ?? config.occupations[0]?.title
+    ?? "";
+}
+
+function Criterion({ icon, title, weight, text }: { icon: string; title: string; weight: string; text: string }) {
+  return <div className="criterion"><span className="criterion-icon">{icon}</span><p><strong>{title}</strong><small>{text}</small></p><b>{weight}</b></div>;
+}
+
+function HowCard({ number, symbol, title, text }: { number: string; symbol: string; title: string; text: string }) {
+  return <article className="how-card"><span className="how-number">{number}</span><span className="how-symbol">{symbol}</span><h3>{title}</h3><p>{text}</p></article>;
+}
+
+async function extractResumeText(file: File): Promise<string> {
+  const extension = file.name.split(".").pop()?.toLowerCase();
+  if (extension === "txt" || extension === "md" || file.type.startsWith("text/")) return file.text();
+  if (extension === "docx") {
+    const mammoth = await import("mammoth");
+    const result = await mammoth.extractRawText({ arrayBuffer: await file.arrayBuffer() });
+    return result.value;
+  }
+  if (extension === "pdf" || file.type === "application/pdf") {
+    const pdfjs = await import("pdfjs-dist/legacy/build/pdf.mjs");
+    const worker = await import("pdfjs-dist/legacy/build/pdf.worker.min.mjs?url");
+    pdfjs.GlobalWorkerOptions.workerSrc = worker.default;
+    const document = await pdfjs.getDocument({ data: new Uint8Array(await file.arrayBuffer()) }).promise;
+    const pages: string[] = [];
+    for (let pageNumber = 1; pageNumber <= document.numPages; pageNumber += 1) {
+      const page = await document.getPage(pageNumber);
+      const content = await page.getTextContent();
+      pages.push(content.items.map((item) => ("str" in item ? item.str : "")).join(" "));
+    }
+    return pages.join("\n");
+  }
+  throw new Error("Formato nÃ£o reconhecido.");
+}
+
+function formatBytes(bytes: number): string {
+  return bytes < 1024 * 1024 ? `${Math.max(1, Math.round(bytes / 1024))} KB` : `${(bytes / 1024 / 1024).toFixed(1)} MB`;
+}
+
+function firstName(value: string): string {
+  const normalized = value.includes("@") ? value.split("@")[0] : value;
+  return normalized.trim().split(/\s+/)[0] || "VocÃª";
+}
+
+function formatDate(value: string): string {
+  const normalized = value.includes("T") ? value : `${value.replace(" ", "T")}Z`;
+  const date = new Date(normalized);
+  if (Number.isNaN(date.getTime())) return value;
+  return new Intl.DateTimeFormat("pt-BR", { day: "2-digit", month: "short" }).format(date).replace(".", "");
+}
+
+function scoreClass(score: number): string {
+  if (score >= 80) return "high";
+  if (score >= 55) return "medium";
+  return "low";
+}
